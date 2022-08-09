@@ -5,14 +5,14 @@
   padding: 0 40px;
 
   @include vp-1439 {
-    padding: 0 32px;
+    padding: 0 110px;
   }
 
   @include vp-1023 {
     padding: 0 24px;
   }
 
-  @include vp-767 {
+  @include vp-769 {
     padding: 0 16px;
   }
 }
