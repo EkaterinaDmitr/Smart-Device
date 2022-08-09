@@ -1,0 +1,33 @@
+.logo-group {
+}
+
+.logo-group__text {
+  display: flex;
+  flex-direction: column;
+  padding-left: 16px;
+  padding-top: 6px;
+
+  @include vp-769 {
+    display: none;
+  }
+
+  span:first-child {
+    font-family: $font--roboto-bold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 29px;
+    color: $light-color;
+
+
+
+  }
+
+  span:last-child {
+    font-family: $font--roboto-medium;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: $dim-gray;
+  }
+}

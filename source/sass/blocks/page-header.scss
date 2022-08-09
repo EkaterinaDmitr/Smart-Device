@@ -1,0 +1,43 @@
+.page-header {
+  background: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
+}
+.page-header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0 auto;
+  max-width: 1222px;
+  padding: 28px 63px 0 0;
+
+  @media (max-width: $vp-1024) {
+    padding: 20px 0 0 26px;
+  }
+  @media (max-width: $vp-320) {
+    padding: 15px 0 0 10px;
+  }
+}
+.page-header__nav {
+  display: flex;
+}
+
+.page-header__logo-group {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  margin-right: 146px;
+
+  @media (max-width: $vp-1280) {
+    margin: 0;
+  }
+}
+
+.page-header__logo-group img {
+  // @media (max-width: $vp-770) {
+  //   width: 35px;
+  //   height: 35px;
+  // }
+  @media (max-width: $vp-320) {
+    width: 35px;
+    height: 35px;
+  }
+}
