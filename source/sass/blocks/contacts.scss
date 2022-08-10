@@ -20,6 +20,10 @@
 .contacts__item {
   margin-right: 123px;
 
+  @media (max-width: $vp-1440) {
+    margin-right: 20px;
+  }
+
   @media (max-width: $vp-1280) {
     margin-right: 30px;
   }
