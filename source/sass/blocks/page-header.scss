@@ -1,4 +1,8 @@
 .page-header {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1;
   background: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
 }
 .page-header__container {
@@ -7,17 +11,28 @@
   align-items: flex-start;
   margin: 0 auto;
   max-width: 1222px;
-  padding: 28px 63px 0 0;
+  padding: 28px 63px 35px 0;
+
+  // @media (max-width: $vp-1440) {
+  //   padding: 20px 0 0 26px;
+  // }
 
   @media (max-width: $vp-1024) {
-    padding: 20px 0 0 26px;
+    padding: 20px 26px;
+    justify-content: space-between;
   }
+
   @media (max-width: $vp-320) {
     padding: 15px 0 0 10px;
   }
 }
 .page-header__nav {
   display: flex;
+
+  @media (max-width: $vp-770) {
+    padding-left: 25px;
+    padding-bottom: 5px;
+  }
 }
 
 .page-header__logo-group {

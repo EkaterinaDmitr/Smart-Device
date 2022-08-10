@@ -1,0 +1,84 @@
+.advantages {
+}
+.visually-hidden {
+}
+.advantages__list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 595px 595px;
+  grid-template-rows: 300px 300px;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+
+  @media (max-width: $vp-1280 ){
+
+    grid-template-columns: 320px 320px;
+    grid-template-rows: 300px 300px;
+
+  }
+}
+
+.advantages__list h3 {
+  font-family: $font--roboto-regular;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 140%;
+  color: $blue;
+  margin-top: 50px;
+
+}
+
+.advantages__list p {
+
+font-family: $font--pt-mono;
+font-style: normal;
+font-size: 16px;
+line-height: 135%;
+color: $dark-color;
+
+}
+
+.advantages__item {
+  min-height: 300px;
+  border: 2px solid $light-grey;
+  border-left: 5px solid $blue;
+  padding: 40px 45px 0 45px;
+  cursor: pointer;
+}
+.advantages__item--deadlines::before {
+  content: "";
+  position: absolute;
+  background-image: url("../../img/svg/stopwatch.svg");
+  background-repeat: no-repeat;
+  width: 35px;
+  height: 35px;
+  background-position: 0 0;
+}
+.advantages__item--providers::before {
+  content: "";
+  position: absolute;
+  background-image: url("../../img/svg/hired.svg");
+  background-repeat: no-repeat;
+  width: 35px;
+  height: 35px;
+  background-position: 0 0;
+}
+.advantages__item--privacy::before {
+  content: "";
+  position: absolute;
+  background-image: url("../../img/svg/detective.svg");
+  background-repeat: no-repeat;
+  width: 35px;
+  height: 35px;
+  background-position: 0 0;
+}
+.advantages__item--cost::before {
+  content: "";
+  position: absolute;
+  background-image: url("../../img/svg/tag.svg");
+  background-repeat: no-repeat;
+  width: 35px;
+  height: 35px;
+  background-position: 0 0;
+}
