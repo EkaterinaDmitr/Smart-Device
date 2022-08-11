@@ -5,6 +5,7 @@
   z-index: 1;
   background: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
 }
+
 .page-header__container {
   display: flex;
   justify-content: space-between;
@@ -26,12 +27,18 @@
     padding: 15px 0 0 10px;
   }
 }
+
 .page-header__nav {
   display: flex;
 
   @media (max-width: $vp-770) {
     padding-left: 25px;
     padding-bottom: 5px;
+  }
+
+  @media (max-width: $vp-320) {
+    padding-left: 16px;
+    padding-bottom: 20px;
   }
 }
 
@@ -47,12 +54,12 @@
 }
 
 .page-header__logo-group img {
-  // @media (max-width: $vp-770) {
+  @media (max-width: $vp-770) {
+    max-width: 35px;
+    height: 35px;
+  }
+  // @media (max-width: $vp-320) {
   //   width: 35px;
   //   height: 35px;
   // }
-  @media (max-width: $vp-320) {
-    width: 35px;
-    height: 35px;
-  }
 }
