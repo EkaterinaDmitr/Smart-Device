@@ -1,0 +1,112 @@
+.services {
+  background-color: $dark-color;
+  min-height: 960px;
+}
+
+.services__layout-container {
+}
+
+.services__container h2 {
+  color: $white;
+  font-family: $font--roboto-regular;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  margin: 46px 0 54px -40px;
+
+
+  @media (max-width: $vp-1440) {
+    margin: 0;
+  }
+
+  @media (max-width: $vp-320) {
+    font-size: 28px;
+    line-height: 140.62%;
+  }
+}
+
+.services__list {
+  display: grid;
+  justify-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(3, 350px);
+  gap: 85px;
+  padding: 0;
+
+  @media (max-width: $vp-1440) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.services__list h3 {
+  font-family: $font--roboto-regular;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: $white;
+
+  @media (max-width: $vp-320) {
+    font-size: 18px;
+    line-height: 167%;
+  }
+}
+
+.services__item {
+  position: relative;
+  min-height: 650px;
+  width: 350px;
+  padding: 26px 0 0 43px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @media (max-width: $vp-1440) {
+    width: 100%;
+    min-height: 350px;
+  }
+}
+
+.services__item--productions {
+  background-image: url("../../img/produkr-1.jpg");
+
+  @media (max-width: $vp-1440) {
+    background-image: url("../../img/produkr-1-tablet.jpg");
+  }
+}
+
+.services__item--montage {
+  background-image: url("../../img/produkt-2.jpg");
+
+  @media (max-width: $vp-1440) {
+    background-image: url("../../img/produkt-2-tablet.jpg");
+  }
+}
+
+.services__item--components {
+  background-image: url("../../img/produkt-3.jpg");
+
+  @media (max-width: $vp-1440) {
+    background-image: url("../../img/produkt-3-tablet.jpg");
+  }
+}
+
+.services__decorative-block::before {
+  content: "";
+  width: 60px;
+  height: 60px;
+  background-color: $blue;
+  position: absolute;
+  background-image: url("../../img/svg/vector.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 90%;
+  left: 82%;
+
+  @media (max-width: $vp-1440) {
+    top: 83%;
+    left: 90%;
+  }
+}

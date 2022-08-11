@@ -1,0 +1,69 @@
+.about-company {
+  margin-bottom: 110px;
+}
+
+.about-company h2 {
+  font-family: $font--roboto-regular;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  color: $dark-color;
+
+
+  @media (max-width: $vp-1280) {
+    font-size: 28px;
+    line-height: 140.62%;
+  }
+
+}
+
+.about-company__container {
+  position: relative;
+  margin-left: 211px;
+}
+
+.about-company__block {
+  position: relative;
+}
+
+.about-company__block::before {
+  content: "";
+  position: absolute;
+  background-image: url("../../img/about-company.png");
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 320px;
+  left: 0;
+  top: 51px;
+}
+
+.about-company__text {
+  font-family: $font--pt-mono;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: $dark-color;
+  margin-top: -18px;
+  margin-bottom: 55px;
+
+  @media (max-width: $vp-1280) {
+    font-size: 14px;
+    line-height: 134.4%;
+  }
+}
+
+.about-company__button {
+  font-family: $font--roboto-regular;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $blue;
+  border: 1px solid $blue;
+  border-radius: 3px;
+  padding: 14px 48px;
+}

@@ -1,0 +1,68 @@
+.feedback {
+  background-color: $blue;
+  min-height: 840px;
+}
+
+.feedback__layout-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 170px;
+}
+.container {
+}
+
+.feedback__image {
+}
+
+.feedback__container {
+}
+
+.feedback__group h2 {
+  font-family: $font--roboto-regular;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  color: $white;
+}
+
+.feedback__group p {
+  font-family: $font--pt-mono;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: $white;
+}
+
+.feedback__form {
+}
+
+.form {
+}
+
+.visually-hidden {
+}
+
+.form__container {
+}
+
+.form__name {
+}
+
+.form__tel {
+}
+
+.form__question {
+}
+
+.form__container--question {
+}
+
+.form__block {
+}
+
+.form__checkbox-label {
+}
+
+.form__button {
+}

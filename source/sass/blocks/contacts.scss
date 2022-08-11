@@ -1,5 +1,6 @@
 .contacts {
 }
+
 .contacts__list {
   display: flex;
   list-style: none;
@@ -14,9 +15,10 @@
 
   // }
   @media (max-width: $vp-320) {
-    margin: 9px 0 0 55px;
+    margin: 5px 0 0 134px;
   }
 }
+
 .contacts__item {
   margin-right: 123px;
 
@@ -28,6 +30,7 @@
     margin-right: 30px;
   }
 }
+
 .contacts__item-svg {
   display: flex;
   color: $light-color;
@@ -41,6 +44,10 @@
 
 .contacts__item-svg img {
   margin-right: 12px;
+
+  @media (max-width: $vp-320) {
+    margin-right: 8px;
+  }
 }
 
 .contacts__mail {
@@ -48,11 +55,13 @@
     display: none;
   }
 }
+
 .contacts__phone {
   @media (max-width: 870px) {
     display: none;
   }
 }
+
 .contacts__open-modal {
   background: transparent;
   padding: 10px 15px;
