@@ -6,12 +6,34 @@
 .feedback__layout-container {
   display: flex;
   justify-content: space-between;
-  padding-top: 170px;
+  padding-top: 135px;
 }
-.container {
+
+
+.feedback__layout-container::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  left: 0;
+  bottom: 278px;
+  border-top: 841px solid rgba(4, 24, 39, 0.5);
+  border-right: 974px solid transparent;
+
+  @media (max-width: $vp-1440) {
+    display: none;
+  }
 }
 
 .feedback__image {
+  z-index: 2;
+  height: 100%;
+  margin-right: 120px;
+  margin-top: 110px;
+  margin-left: -40px;
+
+  @media (max-width: $vp-1440) {
+    display: none;
+  }
 }
 
 .feedback__container {
@@ -23,6 +45,8 @@
   font-size: 36px;
   line-height: 51px;
   color: $white;
+  margin-bottom: 11px;
+  margin-left: -5px;
 }
 
 .feedback__group p {
@@ -32,21 +56,59 @@
   font-size: 16px;
   line-height: 22px;
   color: $white;
+  margin: 15px 0;
 }
 
 .feedback__form {
 }
 
 .form {
+  margin-top: 32px;
 }
 
 .visually-hidden {
 }
 
-.form__container {
+.form__container::before  {
+  content: "";
+  background-image: url(../../img/paper-airplane.png);
+  background-repeat: no-repeat;
+  width: 510px;
+  height:380px;
+
 }
 
-.form__name {
+
+.form__body input {
+  font-family: $font--pt-mono;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: $white;
+  background-color: rgba(4, 20, 39, 0.15);
+  border-radius: 3px;
+  border: none;
+  padding: 15px;
+  margin-bottom: 20px;
+  // margin-left: 5px;
+  margin-right: 4px;
+  padding: 15px 67px 15px 15px;
+}
+
+.form__body textarea {
+  width: 583px;
+  padding: 23px 0 0 16px;
+  // margin-left: 3px;
+  background-color: rgba(4, 20, 39, 0.15);
+  border-radius: 3px;
+  border: none;
+  margin-bottom: 30px;
+
+}
+
+
+.form__container input, {
+
 }
 
 .form__tel {
@@ -62,7 +124,33 @@
 }
 
 .form__checkbox-label {
+  font-size: 14px;
+  line-height: 16px;
+  color: $white;
+  opacity: 0.8;
 }
 
+
+.form__checkbox {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
+
 .form__button {
+  font-family: $font--roboto-bold;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $white;
+  padding: 13px 69px;
+  background-color: $dark-color;
+  border: none;
+  border-radius: 3px;
+  // margin-right: 42px;
+
 }
