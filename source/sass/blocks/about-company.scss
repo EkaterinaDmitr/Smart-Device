@@ -21,6 +21,10 @@
 .about-company__container {
   position: relative;
   margin-left: 211px;
+
+  @include vp-769 {
+    margin: 0;
+  }
 }
 
 .about-company__block {
@@ -36,6 +40,10 @@
   height: 320px;
   left: 0;
   top: 51px;
+
+  @include vp-769 {
+    display: none;
+  }
 }
 
 .about-company__text {

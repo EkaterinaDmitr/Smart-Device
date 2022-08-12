@@ -5,6 +5,7 @@
   display: flex;
   list-style: none;
   padding-left: 28px;
+  flex-wrap: wrap;
 
   @media (max-width: $vp-770) {
     margin: 9px 0 0 355px;
@@ -19,7 +20,7 @@
   }
 }
 
-.contacts__item {
+.contacts__item:not(:last-child) {
   margin-right: 123px;
 
   @media (max-width: $vp-1440) {
