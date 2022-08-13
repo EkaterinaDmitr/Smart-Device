@@ -24,6 +24,11 @@
     }
   }
 
+  @include vp-769 {
+    background-size: cover;
+
+  }
+
   @media (max-width: $vp-320) {
     background-image: url("../../img/mobile-bg-image.jpg");
     min-height: 560px;
@@ -65,6 +70,9 @@
     padding-top: 160px;
   }
 
+  @include vp-769 {
+    font-size: 46px;
+  }
 
   @media (max-width: $vp-320) {
     font-size: 36px;
@@ -123,6 +131,11 @@
 
   @media (max-width: $vp-770) {
     margin-left: 72px;
+  }
+
+  @include vp-769 {
+    margin: 0 10px;;
+    display: inline-block;
   }
 
   @media (max-width: $vp-320) {

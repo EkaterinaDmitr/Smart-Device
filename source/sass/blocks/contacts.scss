@@ -8,15 +8,13 @@
   flex-wrap: wrap;
 
   @media (max-width: $vp-770) {
-    margin: 9px 0 0 355px;
     padding: 0;
+    justify-content: flex-end;
+    margin: 11px 42px 0 auto;
   }
-  // @include vp-769 {
-  //   margin: 9px 0 0 124px;
 
-  // }
   @media (max-width: $vp-320) {
-    margin: 5px 0 0 134px;
+    margin: 5px 37px 0 auto;
   }
 }
 
@@ -27,7 +25,7 @@
     margin-right: 20px;
   }
 
-  @media (max-width: $vp-1280) {
+  @media (max-width: $vp-770) {
     margin-right: 30px;
   }
 }

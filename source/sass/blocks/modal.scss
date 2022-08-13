@@ -59,14 +59,41 @@
   &__content {
     position: relative;
 
-    width: 600px;
+    width: 500px;
     padding: 40px;
-
-    background-color: $color-default-white;
+    // min-height: 610px;
+    border-radius: 3px;
+    background-color: $blue;
 
     @include vp-769 {
       width: 100%;
       padding: 20px;
+    }
+  }
+
+  &__form {
+    h2 {
+      font-family: $font--roboto-regular;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 140.62%;
+      color: $white;
+      margin: 0;
+    }
+
+    p {
+      font-family: $font--pt-mono;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 22px;
+      color: $white;
+    }
+
+  }
+
+  &__form-body {
+    textarea {
+      width: 420px;
     }
   }
 

@@ -1,12 +1,21 @@
 .feedback {
   background-color: $blue;
   min-height: 840px;
+
+  @media (max-width: $vp-770) {
+    min-height: 580px;
+  }
 }
 
 .feedback__layout-container {
   display: flex;
   justify-content: space-between;
   padding-top: 135px;
+
+  @media (max-width: $vp-770) {
+    display: block;
+    padding: 17px 54px;
+  }
 }
 
 
@@ -14,10 +23,10 @@
   content: "";
   position: absolute;
   width: 0;
-  left: 0;
+  left: -15px;
   bottom: 278px;
-  border-top: 841px solid rgba(4, 24, 39, 0.5);
-  border-right: 974px solid transparent;
+  border-top: 860px solid rgba(4, 24, 39, 0.5);
+  border-right: 998px solid transparent;
 
   @media (max-width: $vp-1440) {
     display: none;
@@ -57,6 +66,10 @@
   line-height: 22px;
   color: $white;
   margin: 15px 0;
+
+  @media (max-width: $vp-1440) {
+    margin: -5px 0 0 -3px;
+  }
 }
 
 .feedback__form {
@@ -64,6 +77,29 @@
 
 .form {
   margin-top: 32px;
+
+  @media (max-width: $vp-770) {
+    margin-top: 23px;
+
+  }
+}
+
+.form__input {
+  ::placeholder {
+    color: $white;
+  }
+
+  @media (max-width: $vp-770) {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0,1fr));
+    gap: 31px;
+  }
+
+  @include vp-769 {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
 }
 
 .visually-hidden {
@@ -78,6 +114,12 @@
 
 }
 
+.form__body {
+  @media (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 .form__body input {
   font-family: $font--pt-mono;
@@ -88,22 +130,28 @@
   background-color: rgba(4, 20, 39, 0.15);
   border-radius: 3px;
   border: none;
-  padding: 15px;
   margin-bottom: 20px;
-  // margin-left: 5px;
   margin-right: 4px;
   padding: 15px 67px 15px 15px;
+
+  @media (max-width:$vp-770) {
+    margin: 0 0 20px 0;
+  }
 }
 
 .form__body textarea {
   width: 583px;
-  padding: 23px 0 0 16px;
-  // margin-left: 3px;
+  padding: 23px 16px 0 16px;
   background-color: rgba(4, 20, 39, 0.15);
   border-radius: 3px;
   border: none;
-  margin-bottom: 30px;
+  margin-bottom: 24px;
+  color: $white;
 
+  @media (max-width: $vp-770) {
+    width: 100%;
+    padding: 33px 12px 0 12px;
+  }
 }
 
 
@@ -135,6 +183,19 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 50px;
+
+
+  @include vp-769 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (max-width: $vp-770) {
+    display: grid;
+    grid-template-columns: auto 1fr;
+  }
+
+
 }
 
 
