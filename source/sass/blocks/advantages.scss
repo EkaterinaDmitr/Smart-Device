@@ -54,7 +54,7 @@
 
 .advantages__item:hover {
   background-color: $blue;
-  border: none;
+  border: 2px solid $blue;
 
   h3,
   p {
@@ -62,6 +62,8 @@
   }
 
 }
+
+
 
 .advantages__item h3 {
   font-family: $font--roboto-regular;

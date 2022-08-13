@@ -20,6 +20,26 @@ window.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+
+// Вешаем обработчик клика на кнопку
+const clickToHide2 = document.querySelector('#click-to-hide-2');
+clickToHide2.addEventListener('click', hideVisibleElem);
+
+// Функция добавления / удаления класса, который скрывает элемент
+function hideVisibleElem() {
+  let wpcraftBox2 = document.querySelector('.wpcraft-box-2');
+  wpcraftBox2.classList.toggle('about-company__continuation');
+
+// В зависимости от наличия скрывающего класса меняем текст в кнопке
+  if (wpcraftBox2.classList.contains('about-company__continuation')) {
+    clickToHide2.value = 'Подробнее';
+  } else {
+    clickToHide2.value = 'Свернуть';
+  }
+}
+
+
+
 // ---------------------------------
 
 // ❗❗❗ обязательно установите плагины eslint, stylelint, editorconfig в редактор кода.

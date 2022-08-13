@@ -1,5 +1,9 @@
 .about-company {
-  margin-bottom: 110px;
+  margin-bottom: 99px;
+
+  @media (max-width: $vp-770) {
+    margin-bottom: 57px;
+  }
 }
 
 .about-company h2 {
@@ -12,23 +16,36 @@
 
 
   @media (max-width: $vp-1280) {
-    font-size: 28px;
-    line-height: 140.62%;
+    // font-size: 28px;
+    // line-height: 140.62%;
+  }
+
+  @media (max-width: $vp-770) {
+    // font-size: 36px;
   }
 
 }
 
 .about-company__container {
-  position: relative;
-  margin-left: 211px;
+  margin-left: 210px;
 
   @include vp-769 {
     margin: 0;
+  }
+
+  @media (max-width: $vp-770) {
+    margin-left: 200px;
+
+    h2 {
+      margin-top: 7px;
+      margin-bottom: 32px;
+    }
   }
 }
 
 .about-company__block {
   position: relative;
+  padding-right: 0;
 }
 
 .about-company__block::before {
@@ -41,9 +58,26 @@
   left: 0;
   top: 51px;
 
+
+  @media (max-width: $vp-1440) {
+    left: 8%;
+
+  }
+  @media (max-width: $vp-1024) {
+    left: 0;
+
+  }
+
+  @media (max-width: $vp-770) {
+    left: 44px;
+    top: 34px;
+  }
+
   @include vp-769 {
     display: none;
   }
+
+
 }
 
 .about-company__text {
@@ -54,16 +88,23 @@
   line-height: 22px;
   color: $dark-color;
   margin-top: -18px;
-  margin-bottom: 55px;
+  margin-bottom: 38px;
+
+  p {
+    margin-bottom: 21px;
+  }
 
   @media (max-width: $vp-1280) {
-    font-size: 14px;
-    line-height: 134.4%;
+    line-height: 22px;
+    margin-bottom: -8px
   }
+
 }
 
 .about-company__button {
   font-family: $font--roboto-regular;
+  background-color: transparent;
+  cursor: pointer;
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -74,4 +115,8 @@
   border: 1px solid $blue;
   border-radius: 3px;
   padding: 14px 48px;
+}
+
+.about-company__continuation {
+  display: none;
 }

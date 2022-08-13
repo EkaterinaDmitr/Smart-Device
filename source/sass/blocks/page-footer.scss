@@ -1,117 +1,14 @@
-// .page-footer {
-//   background-color: $dark-color;
-
-// }
-// .page-footer__info {
-// }
-// .info {
-// }
-// .container {
-// }
-// .info__layout-container {
-// }
-// .info__container-box {
-// }
-// .info__container {
-// }
-// .info__logo-group {
-// }
-// .logo-group {
-// }
-// .logo-group--footer {
-// }
-// .logo-group__text {
-// }
-// .logo-group__text--footer {
-// }
-// .info__social {
-// }
-// .social {
-// }
-// .visually-hidden {
-// }
-// .social__list {
-//   list-style: none;
-// }
-// .social__item {
-// }
-// .social__image {
-// }
-// .social__image--fb {
-// }
-// .social__image--ok {
-// }
-// .social__image--vk {
-// }
-// .info__navigation {
-//   color: $white;
-// }
-// .navigation {
-// }
-// .navigation__wrapper {
-// }
-// .navigation__menu {
-// }
-// .navigation__toggle {
-// }
-// .navigation__toggle--nojs {
-// }
-// .navigation__button {
-// }
-// .navigation__list {
-//   list-style: none;
-// }
-// .navigation__list--menu {
-// }
-// .navigation__item a {
-//   color: $white;
-// }
-// .navigation__location {
-// }
-// .info__location-tel {
-// }
-// .page-footer__modal {
-// }
-// .modal {
-// }
-// .modal__container {
-// }
-// .modal__button-close {
-// }
-// .modal__form {
-// }
-// .modal__container-inputs {
-// }
-// .modal__name {
-// }
-// .modal__tel {
-// }
-// .modal__question {
-// }
-// .modal__container-send {
-// }
-// .modal__block {
-// }
-// .modal__checkbox-label {
-// }
-// .modal__button {
-// }
-
-
-
-
 .page-footer {
   background-color: $dark-color;
 
   .container {
-    padding-top: 55px;
-    padding-bottom: 44px;
+    padding: 55px 44px;
 
     display: flex;
     justify-content: space-between;
 
     @include vp-1023 {
-      padding-bottom: 58px;
+      padding: 55px 50px 58px;
 
       display: grid;
       grid-template-columns: auto auto;
@@ -148,7 +45,9 @@
 
 .page-footer__logo {
   margin-top: -5px;
-  margin-bottom: 34px;
+  margin-bottom: 39px;
+  display: flex;
+
 
   @include vp-1023 {
     margin-right: auto;
@@ -161,6 +60,8 @@
     position: relative;
     left: -9px;
   }
+
+
 
   svg {
     @include vp-769 {
@@ -254,11 +155,11 @@
   &--nojs {
     @include vp-769 {
       &::before {
-        display: none;
+        display: block;
       }
 
       &::after {
-        display: none;
+        display: block;
       }
 
       .site-sections__title {
@@ -266,7 +167,7 @@
       }
 
       .site-sections__list {
-        display: flex;
+        display: none;
       }
     }
   }
@@ -352,7 +253,7 @@
 
 .socials {
   padding: 0;
-  margin: 0;
+  margin: 0 0 0 16px;
   list-style: none;
   display: grid;
   grid-template-columns: repeat(3, 30px);
@@ -387,10 +288,11 @@
 }
 
 .site-sections__title {
-  margin: 0 0 22px;
+  margin: 2px 0 22px;
   padding: 0;
-
-  font: 400 15px/16px $font--pt-mono;
+  font-family: $font--roboto-regular;
+  font-size: 15px;
+  line-height: 16px;
   color: $white;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -448,7 +350,7 @@
 }
 
 .communications__title {
-  margin: 0 0 22px;
+  margin: 2px 0 22px;
   padding: 0;
 
   font: 400 15px/16px $font--roboto-regular;
