@@ -755,6 +755,26 @@ button,
   width: 420px;
 }
 
+.modal__form-body ::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.modal__form-body ::-moz-placeholder {
+  color: #ffffff;
+}
+
+.modal__form-body :-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.modal__form-body ::-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.modal__form-body ::placeholder {
+  color: #ffffff;
+}
+
 .modal__close-btn {
   position: absolute;
   top: 22px;
@@ -797,6 +817,131 @@ button,
   pointer-events: auto;
 }
 
+.modal__form-checkbox-modal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.modal__form-body input {
+  font-family: "PTMono-Regular", "Times New Roman", serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+  background-color: rgba(4, 20, 39, 0.15);
+  border-radius: 3px;
+  border: none;
+  margin-bottom: 20px;
+  margin-right: 0;
+  padding: 15px 60px 15px 15px;
+}
+
+.modal__form-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.modal__form-body textarea {
+  padding: 23px 16px 0 16px;
+  background-color: rgba(4, 20, 39, 0.15);
+  border-radius: 3px;
+  border: none;
+  margin-bottom: 32px;
+  color: #ffffff;
+}
+
+.modal__form-check {
+  position: relative;
+}
+
+.modal__form-check input {
+  position: absolute;
+  margin: 0;
+  width: 15px;
+  height: 15px;
+  left: 0;
+  top: 20px;
+}
+
+.modal__form-check input:checked + .modal__form-checkbox-lable::after {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.modal__form-checkbox-lable {
+  position: relative;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  margin-top: 13px;
+}
+
+.modal__form-checkbox-lable::before {
+  content: "";
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 15px;
+  flex: 0 0 15px;
+  height: 15px;
+  background-color: #00b2ff;
+  margin-right: 11px;
+  border: 1px solid #ffffff;
+  border-radius: 2px;
+  margin-top: 7px;
+}
+
+.modal__form-checkbox-lable::after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 12px;
+  left: 3px;
+  background-image: url("../../img/svg/check-vector.svg");
+  background-repeat: no-repeat;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+}
+
+.modal__form-button {
+  font-family: "RobotoCondensed-Bold", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 13px 69px;
+  background-color: #041827;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.modal__form-button:hover {
+  color: #ffffff80;
+}
+
+.modal__form-button:active {
+  color: #ffffff30;
+}
+
 .contacts__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -816,6 +961,14 @@ button,
   display: -ms-flexbox;
   display: flex;
   color: #f2f5f7;
+}
+
+.contacts__item-svg:hover {
+  opacity: 0.8;
+}
+
+.contacts__item-svg:active {
+  opacity: 0.3;
 }
 
 .contacts__item-svg img {
@@ -955,6 +1108,14 @@ button,
   border: none;
   border-radius: 3px;
   margin-left: 85px;
+}
+
+.main-page__button:hover {
+  color: #041827;
+}
+
+.main-page__button:active {
+  color: #04182730;
 }
 
 .main-page__button--mobile {
@@ -1150,6 +1311,14 @@ button,
   padding: 14px 48px;
 }
 
+.about-company__button:hover {
+  opacity: 0.8;
+}
+
+.about-company__button:active {
+  opacity: 0.3;
+}
+
 .about-company__continuation {
   display: none;
 }
@@ -1167,6 +1336,10 @@ button,
   font-size: 36px;
   line-height: 51px;
   margin: 46px 0 54px -40px;
+}
+
+.services__header-mobile {
+  display: none;
 }
 
 .services__list {
@@ -1199,6 +1372,14 @@ button,
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.services__item:hover {
+  opacity: 0.8;
+}
+
+.services__item:active {
+  opacity: 0.5;
 }
 
 .services__item::before {
@@ -1283,6 +1464,15 @@ button,
   margin-top: 32px;
 }
 
+.form__input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
 .form__input ::-webkit-input-placeholder {
   color: #ffffff;
 }
@@ -1305,7 +1495,7 @@ button,
 
 .form__container::before {
   content: "";
-  background-image: url(../../img/paper-airplane.png);
+  background-image: url("../../img/paper-airplane.png");
   background-repeat: no-repeat;
   width: 510px;
   height: 380px;
@@ -1321,25 +1511,22 @@ button,
   border-radius: 3px;
   border: none;
   margin-bottom: 20px;
-  margin-right: 4px;
-  padding: 15px 67px 15px 15px;
+  margin-right: 0;
+  padding: 15px 60px 15px 15px;
 }
 
 .form__body textarea {
-  width: 583px;
+  width: 580px;
   padding: 23px 16px 0 16px;
   background-color: rgba(4, 20, 39, 0.15);
   border-radius: 3px;
   border: none;
-  margin-bottom: 24px;
+  margin-bottom: 32px;
   color: #ffffff;
 }
 
-.form__checkbox-label {
-  font-size: 14px;
-  line-height: 16px;
-  color: #ffffff;
-  opacity: 0.8;
+.form__check {
+  position: relative;
 }
 
 .form__checkbox {
@@ -1347,7 +1534,71 @@ button,
   display: grid;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
-  gap: 50px;
+  gap: 51px;
+}
+
+.form__checkbox-modal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.form__checkbox input {
+  position: absolute;
+  margin: 0;
+  width: 15px;
+  height: 15px;
+  left: 0;
+  top: 20px;
+}
+
+.form__checkbox input:checked + .form__checkbox__lable::after {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.form__checkbox__lable {
+  position: relative;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  margin-top: 13px;
+}
+
+.form__checkbox__lable::before {
+  content: "";
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 15px;
+  flex: 0 0 15px;
+  height: 15px;
+  background-color: #00b2ff;
+  margin-right: 11px;
+  border: 1px solid #ffffff;
+  border-radius: 2px;
+  margin-top: 7px;
+}
+
+.form__checkbox__lable::after {
+  content: "";
+  width: 16px;
+  height: 15px;
+  position: absolute;
+  top: 12px;
+  left: 3px;
+  background-image: url("../../img/svg/check-vector.svg");
+  background-repeat: no-repeat;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
 }
 
 .form__button {
@@ -1363,6 +1614,15 @@ button,
   background-color: #041827;
   border: none;
   border-radius: 3px;
+  cursor: pointer;
+}
+
+.form__button:hover {
+  color: #ffffff80;
+}
+
+.form__button:active {
+  color: #ffffff30;
 }
 
 .page-footer {
@@ -1371,6 +1631,7 @@ button,
 
 .page-footer .container {
   padding: 55px 44px;
+  max-width: 1311px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1404,6 +1665,35 @@ button,
   margin: 3px 0 0;
 }
 
+.logo__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-left: 16px;
+  padding-top: 6px;
+}
+
+.logo__footer span:first-child {
+  font-family: "RobotoCondensed-Bold", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 29px;
+  color: #f2f5f7;
+}
+
+.logo__footer span:last-child {
+  font-family: "Roboto-Medium", "Arial", sans-serif;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #ffffff70;
+}
+
 .page-footer__socials {
   margin-left: 16px;
 }
@@ -1432,6 +1722,14 @@ button,
 .socials__item {
   width: 30px;
   height: 30px;
+}
+
+.socials__item:hover {
+  opacity: .8;
+}
+
+.socials__item:active {
+  opacity: .3;
 }
 
 .socials__link {
@@ -1623,6 +1921,10 @@ button,
     background-image: url("../../img/produkt-3-tablet.jpg");
   }
 
+  .feedback {
+    min-height: 600px;
+  }
+
   .feedback__layout-container::before {
     display: none;
   }
@@ -1633,6 +1935,18 @@ button,
 
   .feedback__group p {
     margin: -5px 0 0 -3px;
+  }
+
+  .form__input {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    gap: 35px;
+  }
+
+  .form__checkbox {
+    -ms-grid-columns: auto 240px;
+    grid-template-columns: auto 240px;
   }
 }
 
@@ -1839,7 +2153,7 @@ button,
   }
 
   .services__container {
-    padding: 58px 51px;
+    padding: 58px 51px 74px;
   }
 
   .services__list {
@@ -1847,8 +2161,12 @@ button,
     margin-top: 39px;
   }
 
+  .services__list {
+    margin-top: 28px;
+  }
+
   .services__item {
-    padding: 17px 0 0 43px;
+    padding: 17px 0 0 31px;
     min-height: 250px;
   }
 
@@ -1874,19 +2192,24 @@ button,
   }
 
   .form__body input {
-    margin: 0 0 20px 0;
+    margin: 0 0 20px;
+  }
+
+  .form__body input {
+    margin: 0 0 18px;
   }
 
   .form__body textarea {
     width: 100%;
     padding: 33px 12px 0 12px;
+    margin-bottom: 21px;
   }
 
   .form__checkbox {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: auto 1fr;
-    grid-template-columns: auto 1fr;
+    -ms-grid-columns: (minmax(0, 1fr))[2];
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px;
+    justify-items: start;
   }
 }
 
@@ -1896,9 +2219,15 @@ button,
   }
 }
 
+@media (max-width: 770px) and (max-width: 320px) {
+  .about-company__container h2 {
+    margin-bottom: 23px;
+  }
+}
+
 @media (max-width: 769px) {
   .container {
-    padding: 10px 16px;
+    padding: 10px 25px;
   }
 
   .modal__wrapper {
@@ -1950,16 +2279,6 @@ button,
     gap: 0;
   }
 
-  .form__checkbox {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-
   .page-footer .container {
     padding: 35px 0;
     margin: 0;
@@ -1982,7 +2301,7 @@ button,
   }
 
   .page-footer__logo {
-    margin: 0 auto 20px;
+    margin: 0 auto 24px;
     position: relative;
     left: -9px;
   }
@@ -2214,11 +2533,11 @@ button,
     font-size: 36px;
     line-height: 42px;
     padding-top: 140px;
-    margin-left: 9px;
+    margin-left: 0;
   }
 
   .main-page__paragraph {
-    margin: 8px 0 45px 8px;
+    margin: 8px 0 45px;
     font-size: 14px;
   }
 
@@ -2232,6 +2551,12 @@ button,
 
   .main-page__button--mobile {
     display: block;
+    margin: 0;
+    padding: 12px 25px;
+  }
+
+  .advantages {
+    margin-bottom: 15px;
   }
 
   .advantages__item {
@@ -2278,15 +2603,103 @@ button,
     min-height: 325px;
   }
 
+  .about-company {
+    margin-bottom: 69px;
+  }
+
+  .about-company h2 {
+    font-size: 28px;
+  }
+
+  .about-company__text {
+    font-size: 14px;
+    line-height: 134.4%;
+  }
+
+  .about-company__mobile {
+    display: none;
+  }
+
+  .about-company__button {
+    padding: 10px 40px;
+  }
+
+  .services__container {
+    padding-bottom: 89px;
+  }
+
   .services__container h2 {
+    display: none;
+  }
+
+  .services__container h2.services__header-mobile {
+    display: block;
+    padding-top: 36px;
     font-size: 28px;
     line-height: 140.62%;
   }
 
   .services__list h3 {
-    margin-top: 38px;
+    margin-top: 10px;
     font-size: 18px;
     line-height: 167%;
+  }
+
+  .services__item::before {
+    height: 40px;
+    width: 40px;
+  }
+
+  .services__item--productions {
+    background-image: url("../../img/produkt-1-mobile.jpg");
+  }
+
+  .services__item--montage {
+    background-image: url("../../img/produkt-2-mobile.jpg");
+  }
+
+  .services__item--components {
+    background-image: url("../../img/produkt-3-mobile.jpg");
+  }
+
+  .feedback__layout-container {
+    padding-bottom: 89px;
+  }
+
+  .feedback__group h2 {
+    font-size: 30px;
+    line-height: 140.62%;
+    margin: 37px 0 7px;
+  }
+
+  .feedback__group p {
+    font-size: 14px;
+    line-height: 134.4%;
+    margin: 0;
+  }
+
+  .form {
+    margin-top: 34px;
+  }
+
+  .form__body textarea {
+    padding: 25px 16px;
+    margin-bottom: 33px;
+  }
+
+  .form__check {
+    margin-left: 5px;
+  }
+
+  .form__checkbox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 9px;
   }
 }
 

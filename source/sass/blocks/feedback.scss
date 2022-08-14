@@ -2,6 +2,10 @@
   background-color: $blue;
   min-height: 840px;
 
+  @media (max-width: $vp-1440) {
+    min-height: 600px;
+  }
+
   @media (max-width: $vp-770) {
     min-height: 580px;
   }
@@ -15,6 +19,10 @@
   @media (max-width: $vp-770) {
     display: block;
     padding: 17px 54px;
+  }
+
+  @media (max-width: $vp-320) {
+    padding-bottom: 89px;
   }
 }
 
@@ -56,6 +64,12 @@
   color: $white;
   margin-bottom: 11px;
   margin-left: -5px;
+
+  @media (max-width: $vp-320) {
+    font-size: 30px;
+    line-height: 140.62%;
+    margin: 37px 0 7px;
+  }
 }
 
 .feedback__group p {
@@ -70,9 +84,13 @@
   @media (max-width: $vp-1440) {
     margin: -5px 0 0 -3px;
   }
-}
 
-.feedback__form {
+  @media (max-width: $vp-320) {
+    font-size: 14px;
+    line-height: 134.4%;
+    margin: 0;
+
+  }
 }
 
 .form {
@@ -82,11 +100,24 @@
     margin-top: 23px;
 
   }
+
+  @media (max-width: $vp-320) {
+    margin-top: 34px;
+
+  }
 }
 
 .form__input {
+  display: flex;
+  justify-content: space-between;
+
   ::placeholder {
     color: $white;
+  }
+  @media (max-width: $vp-1440) {
+    justify-content: flex-start;
+    gap: 35px;
+
   }
 
   @media (max-width: $vp-770) {
@@ -102,12 +133,9 @@
   }
 }
 
-.visually-hidden {
-}
-
 .form__container::before  {
   content: "";
-  background-image: url(../../img/paper-airplane.png);
+  background-image: url("../../img/paper-airplane.png");
   background-repeat: no-repeat;
   width: 510px;
   height:380px;
@@ -131,70 +159,123 @@
   border-radius: 3px;
   border: none;
   margin-bottom: 20px;
-  margin-right: 4px;
-  padding: 15px 67px 15px 15px;
+  margin-right: 0;
+  padding: 15px 60px 15px 15px;
 
   @media (max-width:$vp-770) {
-    margin: 0 0 20px 0;
+    margin: 0 0 20px;
+  }
+
+  @media (max-width:$vp-770) {
+    margin: 0 0 18px;
+
   }
 }
 
 .form__body textarea {
-  width: 583px;
+  width: 580px;
   padding: 23px 16px 0 16px;
   background-color: rgba(4, 20, 39, 0.15);
   border-radius: 3px;
   border: none;
-  margin-bottom: 24px;
+  margin-bottom: 32px;
   color: $white;
 
   @media (max-width: $vp-770) {
     width: 100%;
     padding: 33px 12px 0 12px;
+    margin-bottom: 21px;
+  }
+
+  @media (max-width: $vp-320) {
+    padding: 25px 16px;
+    margin-bottom: 33px;
+
   }
 }
 
+.form__check {
+  position: relative;
 
-.form__container input, {
-
+  @media (max-width: $vp-320) {
+    margin-left: 5px;
+  }
 }
-
-.form__tel {
-}
-
-.form__question {
-}
-
-.form__container--question {
-}
-
-.form__block {
-}
-
-.form__checkbox-label {
-  font-size: 14px;
-  line-height: 16px;
-  color: $white;
-  opacity: 0.8;
-}
-
 
 .form__checkbox {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 50px;
+  gap: 51px;
 
-
-  @include vp-769 {
-    display: flex;
-    flex-direction: column;
+  @media (max-width: $vp-1440) {
+    grid-template-columns: auto 240px;
   }
 
   @media (max-width: $vp-770) {
-    display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: repeat(2,minmax(0,1fr));
+    gap: 30px;
+    justify-items: start;
   }
 
+  @media (max-width: $vp-320) {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+  }
+}
+
+.form__checkbox-modal {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__checkbox input {
+  position: absolute;
+  margin: 0;
+  width: 15px;
+  height: 15px;
+  left: 0;
+  top: 20px;
+
+}
+
+.form__checkbox input:checked + .form__checkbox__lable::after {
+  transform: scale(1);
+}
+
+.form__checkbox__lable {
+  position: relative;
+  font-size: 14px;
+  line-height: 16px;
+  color: $white;
+  display: flex;
+  cursor: pointer;
+  margin-top: 13px;
+
+
+}
+
+.form__checkbox__lable::before {
+  content: "";
+  flex: 0 0 15px;
+  height: 15px;
+  background-color: $blue;
+  margin-right: 11px;
+  border: 1px solid $white;
+  border-radius: 2px;
+  margin-top: 7px
+}
+
+.form__checkbox__lable::after {
+  content: "";
+  width: 16px;
+  height: 15px;
+  position: absolute;
+  top: 12px;
+  left: 3px;
+  background-image: url("../../img/svg/check-vector.svg");
+  background-repeat: no-repeat;
+  transform: scale(0);
 
 }
 
@@ -212,6 +293,13 @@
   background-color: $dark-color;
   border: none;
   border-radius: 3px;
-  // margin-right: 42px;
+  cursor: pointer;
+}
 
+.form__button:hover {
+  color: #ffffff80;
+}
+
+.form__button:active {
+  color: #ffffff30;
 }

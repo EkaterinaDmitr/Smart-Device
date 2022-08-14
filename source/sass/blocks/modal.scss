@@ -61,7 +61,6 @@
 
     width: 500px;
     padding: 40px;
-    // min-height: 610px;
     border-radius: 3px;
     background-color: $blue;
 
@@ -94,6 +93,10 @@
   &__form-body {
     textarea {
       width: 420px;
+    }
+
+    ::placeholder {
+      color: $white;
     }
   }
 
@@ -143,4 +146,114 @@
 
     pointer-events: auto;
   }
+}
+
+.modal__form-checkbox-modal {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal__form-body input {
+  font-family: $font--pt-mono;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: $white;
+  background-color: rgba(4, 20, 39, 0.15);
+  border-radius: 3px;
+  border: none;
+  margin-bottom: 20px;
+  margin-right: 0;
+  padding: 15px 60px 15px 15px;
+
+}
+
+.modal__form-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal__form-body textarea {
+  padding: 23px 16px 0 16px;
+  background-color: rgba(4, 20, 39, 0.15);
+  border-radius: 3px;
+  border: none;
+  margin-bottom: 32px;
+  color: $white;
+}
+
+.modal__form-check {
+  position: relative;
+}
+
+.modal__form-check input {
+  position: absolute;
+  margin: 0;
+  width: 15px;
+  height: 15px;
+  left: 0;
+  top: 20px;
+
+}
+
+.modal__form-check input:checked + .modal__form-checkbox-lable::after {
+  transform: scale(1);
+}
+
+.modal__form-checkbox-lable {
+  position: relative;
+  font-size: 14px;
+  line-height: 16px;
+  color: $white;
+  display: flex;
+  cursor: pointer;
+  margin-top: 13px;
+}
+
+.modal__form-checkbox-lable::before {
+  content: "";
+  flex: 0 0 15px;
+  height: 15px;
+  background-color: $blue;
+  margin-right: 11px;
+  border: 1px solid $white;
+  border-radius: 2px;
+  margin-top: 7px
+}
+
+.modal__form-checkbox-lable::after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 12px;
+  left: 3px;
+  background-image: url("../../img/svg/check-vector.svg");
+  background-repeat: no-repeat;
+  transform: scale(0);
+}
+
+
+.modal__form-button {
+  font-family: $font--roboto-bold;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $white;
+  padding: 13px 69px;
+  background-color: $dark-color;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.modal__form-button:hover {
+  color: #ffffff80;
+}
+
+.modal__form-button:active {
+  color: #ffffff30;
 }

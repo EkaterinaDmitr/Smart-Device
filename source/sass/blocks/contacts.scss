@@ -35,11 +35,13 @@
   color: $light-color;
 }
 
-// .contacts__item-svg span {
-//   @media (max-width: $vp-1280) {
-//     display: none;
-//   }
-// }
+.contacts__item-svg:hover {
+  opacity: 0.8;
+}
+
+.contacts__item-svg:active {
+  opacity: 0.3;
+}
 
 .contacts__item-svg img {
   margin-right: 12px;
