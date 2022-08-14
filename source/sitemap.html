@@ -93,10 +93,15 @@
               <h2>О компании</h2>
               <div class="about-company__text">
                 <p>
-                  Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы&nbsp;до 10 дней.
+                  Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года.
+                  Выполняем срочные заказы и пилотные образцы&nbsp;до 10 дней.
                 </p>
                 <p>
-                  Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог&nbsp;(РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома,&nbsp;СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.
+                  Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND.
+                </p>
+                <p class="about-company__mobile">
+                  Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог&nbsp;(РЖД),
+                  РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома,&nbsp;СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.
                 </p>
               </div>
               <div class="wpcraft-box-2 about-company__continuation">
@@ -120,6 +125,8 @@
         <section class="services">
           <div class="services__container container">
             <h2>Smart Device предлагает следующие товары и услуги</h2>
+            <h2 class="services__header-mobile">Товары и услуги <br>Smart Device</h2>
+
             <div class="services__list">
               <a href="#" class="services__item services__item--productions">
                 <h3>Производство<br>печатных плат</h3>
@@ -156,11 +163,12 @@
                   <div class="form__checkbox">
                     <button class="form__button" type="submit">Задать вопрос</button>
                     <div class="form__check">
+
                     <input id="formAgreement" type="checkbox" name="agreement" checked required>
-                    <label class="form__checkbox-label" for="formAgreement">
+                    <label class="form__checkbox__lable" for="formAgreement">
                       Я согласен на обработку персональных данных
                     </label>
-                  </div>
+                    </div>
                   </div>
 
                 </form>
@@ -175,12 +183,9 @@
       <footer class="page-footer">
         <div class="container">
           <div class="page-footer__company-links">
-
-
-
             <a class="page-footer__logo logo">
               <img src="img/svg/logo-desktop.svg" width="52" height="52" alt="Логотип компании">
-              <div class="logo-group__text">
+              <div class="logo__footer">
                 <span>Smart Device</span>
                 <span>умные технологии</span>
               </div>
@@ -260,20 +265,22 @@
             <h2>Закажите звонок</h2>
             <p class="modal__description">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
 
-            <form class="form__body" id="form" action="#" method="get">
+            <form class="modal__form-body" id="form" action="#" method="get">
               <input id="formName" type="text" name="name" placeholder="Имя" required>
               <label class="visually-hidden" for="formName">Имя</label>
               <input id="formPhone" type="tel" name="phone" placeholder="Телефон" pattern="^[ 0-9]+$" required>
               <label class="visually-hidden" for="formPhone">Телефон</label>
               <label class="visually-hidden" for="message">Ваш вопрос:</label>
               <textarea id="message" name="message" rows="7" placeholder="Ваш вопрос" required></textarea>
-              <div class="form__checkbox">
-                <button class="form__button" type="submit">Задать вопрос</button>
-                <div class="form__check">
-                <input id="formAgreement" type="checkbox" name="agreement" checked required>
-                <label class="form__checkbox-label" for="formAgreement">
-                  Я согласен на обработку персональных данных
-                </label>
+              <div class="modal__form-checkbox-modal">
+                <button class="modal__form-button" type="submit">Отправить</button>
+                <div class="modal__form-check">
+
+                  <input id="formAgreement" type="checkbox" name="agreement" checked required>
+                  <label class="modal__form-checkbox-lable" for="formAgreement">
+                    Я согласен на обработку персональных данных
+                  </label>
+                  </div>
               </div>
               </div>
 

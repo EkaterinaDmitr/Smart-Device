@@ -1,5 +1,9 @@
 .advantages {
   margin-bottom: 48px;
+
+  @media (max-width: $vp-320) {
+    margin-bottom: 15px;
+  }
 }
 
 .advantages__list {

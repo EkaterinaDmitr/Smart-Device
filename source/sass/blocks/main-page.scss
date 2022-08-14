@@ -78,7 +78,7 @@
     font-size: 36px;
     line-height: 42px;
     padding-top: 140px;
-    margin-left: 9px;
+    margin-left: 0;
   }
 }
 
@@ -99,7 +99,7 @@
   }
 
   @media (max-width: $vp-320) {
-    margin: 8px 0 45px 8px;
+    margin: 8px 0 45px;
     font-size: 14px;
   }
 }
@@ -143,6 +143,15 @@
   }
 }
 
+.main-page__button:hover {
+  color: $dark-color;
+}
+
+.main-page__button:active {
+  color: #04182730;
+
+}
+
 .main-page__button--mobile {
   display: none;
   font-family: $font--roboto-bold;
@@ -161,5 +170,7 @@
 
   @media (max-width: $vp-320) {
     display: block;
+    margin: 0;
+    padding: 12px 25px;
   }
 }
