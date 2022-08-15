@@ -1,12 +1,8 @@
-.logo-group__text {
+.logo__footer {
   display: flex;
   flex-direction: column;
   padding-left: 16px;
   padding-top: 6px;
-
-  @include vp-769 {
-    display: none;
-  }
 
   span:first-child {
     font-family: $font--roboto-bold;

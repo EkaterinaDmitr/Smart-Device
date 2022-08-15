@@ -1,0 +1,36 @@
+.socials {
+  padding: 0;
+  margin: 0 0 0 16px;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 30px);
+  gap: 25px;
+}
+
+.socials__item {
+  width: 30px;
+  height: 30px;
+}
+
+.socials__item:hover {
+  opacity: 0.8;
+}
+
+.socials__item:active {
+  opacity: 0.3;
+}
+
+.socials__link {
+  outline: none;
+
+  svg {
+    fill: $white;
+  }
+
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover svg,
+    &:focus svg {
+      fill: $dark-color;
+    }
+  }
+}

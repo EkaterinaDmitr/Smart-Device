@@ -5,7 +5,6 @@
   bottom: 0;
   left: 0;
   z-index: 1000;
-
   display: flex;
   flex-direction: column;
   overflow-y: auto;
@@ -15,11 +14,7 @@
   transform: scale(1.2);
   visibility: hidden;
   opacity: 0;
-
-  transition: opacity $trans-modal,
-    transform $trans-modal,
-    visibility $trans-modal;
-
+  transition: opacity $trans-modal;
   pointer-events: none;
 
   -ms-overflow-style: none;
@@ -86,13 +81,22 @@
       font-size: 16px;
       line-height: 22px;
       color: $white;
+      margin: 0 0 37px;
     }
-
   }
 
   &__form-body {
+    display: flex;
+    flex-direction: column;
+
     textarea {
-      width: 420px;
+      width: 100%;
+      padding: 23px 16px 0 16px;
+      background-color: rgba(4, 20, 39, 0.15);
+      border-radius: 3px;
+      border: none;
+      margin-bottom: 32px;
+      color: $white;
     }
 
     ::placeholder {
@@ -102,8 +106,8 @@
 
   &__close-btn {
     position: absolute;
-    top: 22px;
-    right: 22px;
+    top: 20px;
+    right: 17px;
     z-index: 1;
 
     width: 40px;
@@ -165,21 +169,6 @@
   margin-bottom: 20px;
   margin-right: 0;
   padding: 15px 60px 15px 15px;
-
-}
-
-.modal__form-body {
-  display: flex;
-  flex-direction: column;
-}
-
-.modal__form-body textarea {
-  padding: 23px 16px 0 16px;
-  background-color: rgba(4, 20, 39, 0.15);
-  border-radius: 3px;
-  border: none;
-  margin-bottom: 32px;
-  color: $white;
 }
 
 .modal__form-check {
@@ -193,7 +182,6 @@
   height: 15px;
   left: 0;
   top: 20px;
-
 }
 
 .modal__form-check input:checked + .modal__form-checkbox-lable::after {
@@ -207,7 +195,7 @@
   color: $white;
   display: flex;
   cursor: pointer;
-  margin-top: 13px;
+  margin-top: 20px;
 }
 
 .modal__form-checkbox-lable::before {
@@ -218,7 +206,6 @@
   margin-right: 11px;
   border: 1px solid $white;
   border-radius: 2px;
-  margin-top: 7px
 }
 
 .modal__form-checkbox-lable::after {
@@ -226,13 +213,12 @@
   width: 15px;
   height: 15px;
   position: absolute;
-  top: 12px;
+  top: 4px;
   left: 3px;
-  background-image: url("../../img/svg/check-vector.svg");
+  background-image: url("../img/svg/check-vector.svg");
   background-repeat: no-repeat;
   transform: scale(0);
 }
-
 
 .modal__form-button {
   font-family: $font--roboto-bold;
