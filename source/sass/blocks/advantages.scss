@@ -64,10 +64,7 @@
   p {
     color: $white;
   }
-
 }
-
-
 
 .advantages__item h3 {
   font-family: $font--roboto-regular;
@@ -105,7 +102,7 @@
 .advantages__item--deadlines::before {
   content: "";
   position: absolute;
-  background-image: url("../../img/svg/stopwatch.svg");
+  background-image: url("../img/svg/stopwatch.svg");
   background-repeat: no-repeat;
   width: 35px;
   height: 35px;
@@ -121,7 +118,7 @@
 .advantages__item--providers::before {
   content: "";
   position: absolute;
-  background-image: url("../../img/svg/hired.svg");
+  background-image: url("../img/svg/hired.svg");
   background-repeat: no-repeat;
   width: 35px;
   height: 35px;
@@ -144,7 +141,7 @@
 .advantages__item--privacy::before {
   content: "";
   position: absolute;
-  background-image: url("../../img/svg/detective.svg");
+  background-image: url("../img/svg/detective.svg");
   background-repeat: no-repeat;
   width: 35px;
   height: 35px;
@@ -160,7 +157,7 @@
 .advantages__item--cost::before {
   content: "";
   position: absolute;
-  background-image: url("../../img/svg/tag.svg");
+  background-image: url("../img/svg/tag.svg");
   background-repeat: no-repeat;
   width: 35px;
   height: 35px;

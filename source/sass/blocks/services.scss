@@ -4,14 +4,13 @@
 }
 
 .services__container {
-  @media (max-width: $vp-770){
+  @media (max-width: $vp-770) {
     padding: 58px 51px 74px;
   }
 
   @media (max-width: $vp-320) {
     padding-bottom: 89px;
   }
-
 }
 
 .services__container h2 {
@@ -22,7 +21,6 @@
   font-size: 36px;
   line-height: 51px;
   margin: 46px 0 54px -40px;
-
 
   @media (max-width: $vp-1440) {
     margin: 0;
@@ -59,12 +57,11 @@
 
   @media (max-width: $vp-770) {
     gap: 29px;
-    margin-top: 39px;
+    margin-top: 37px;
   }
 
-  @media (max-width: $vp-770) {
+  @media (max-width: $vp-320) {
     margin-top: 28px;
-
   }
 }
 
@@ -75,7 +72,6 @@
   font-size: 20px;
   line-height: 150%;
   color: $white;
-
 
   @media (max-width: $vp-320) {
     margin-top: 10px;
@@ -99,9 +95,12 @@
   }
 
   @media (max-width: $vp-770) {
-    padding: 17px 0 0 31px;
+    padding: 17px 45px;
     min-height: 250px;
+  }
 
+  @media (max-width: $vp-770) {
+    padding: 17px 29px;
   }
 }
 
@@ -119,7 +118,7 @@
   height: 60px;
   background-color: $blue;
   position: absolute;
-  background-image: url("../../img/svg/vector.svg");
+  background-image: url("../img/svg/vector.svg");
   background-repeat: no-repeat;
   background-position: center;
   right: 0;
@@ -131,40 +130,38 @@
   }
 }
 
-
-
 .services__item--productions {
-  background-image: url("../../img/produkr-1.jpg");
+  background-image: url("../img/produkr-1.jpg");
 
   @media (max-width: $vp-1440) {
-    background-image: url("../../img/produkr-1-tablet.jpg");
+    background-image: url("../img/produkr-1-tablet.jpg");
   }
 
   @media (max-width: $vp-320) {
-    background-image: url("../../img/produkt-1-mobile.jpg");
+    background-image: url("../img/produkt-1-mobile.jpg");
   }
 }
 
 .services__item--montage {
-  background-image: url("../../img/produkt-2.jpg");
+  background-image: url("../img/produkt-2.jpg");
 
   @media (max-width: $vp-1440) {
-    background-image: url("../../img/produkt-2-tablet.jpg");
+    background-image: url("../img/produkt-2-tablet.jpg");
   }
 
   @media (max-width: $vp-320) {
-    background-image: url("../../img/produkt-2-mobile.jpg");
+    background-image: url("../img/produkt-2-mobile.jpg");
   }
 }
 
 .services__item--components {
-  background-image: url("../../img/produkt-3.jpg");
+  background-image: url("../img/produkt-3.jpg");
 
   @media (max-width: $vp-1440) {
-    background-image: url("../../img/produkt-3-tablet.jpg");
+    background-image: url("../img/produkt-3-tablet.jpg");
   }
 
   @media (max-width: $vp-320) {
-    background-image: url("../../img/produkt-3-mobile.jpg");
+    background-image: url("../img/produkt-3-mobile.jpg");
   }
 }

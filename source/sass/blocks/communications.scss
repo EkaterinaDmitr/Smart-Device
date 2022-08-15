@@ -1,0 +1,56 @@
+.communications {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.communications__title {
+  margin: 2px 0 22px;
+  padding: 0;
+
+  font: 400 15px/16px $font--roboto-regular;
+  color: $white;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  @include vp-769 {
+    margin-bottom: 17px;
+  }
+}
+
+.communications__listf {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.communications__address {
+  margin-bottom: 5px;
+  color: transparentize($white, 0.3);
+  font-style: normal;
+
+  @include vp-769 {
+    font: 400 14px/135% $font--pt-mono;
+    margin-bottom: 22px;
+  }
+}
+
+.communications__tel {
+  margin-bottom: 6px;
+  color: transparentize($white, 0.3);
+  font-style: normal;
+  outline: none;
+
+  @include vp-769 {
+    font: 400 14px/135% $font--pt-mono;
+    margin-bottom: 12px;
+  }
+
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover,
+    &:focus {
+      color: $white;
+      text-decoration: underline;
+    }
+  }
+}

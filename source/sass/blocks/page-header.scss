@@ -39,10 +39,8 @@
   }
 
   @media (max-width: $vp-320) {
-
     padding-left: 16px;
     padding-bottom: 20px;
-
   }
 }
 
@@ -62,8 +60,29 @@
     max-width: 55px;
     height: 55px;
   }
+
   @media (max-width: $vp-320) {
     width: 35px;
     height: 35px;
+  }
+}
+
+.page-header__container-open-modal {
+  background: transparent;
+  padding: 10px 15px;
+  color: $light-color;
+  text-transform: uppercase;
+  font-family: $font--roboto-bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  border: 1px solid $light-color;
+  border-radius: 3px;
+  cursor: pointer;
+  min-height: 40px;
+  margin-top: 5px;
+
+  @media (max-width: $vp-770) {
+    display: none;
   }
 }
