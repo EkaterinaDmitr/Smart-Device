@@ -2,7 +2,7 @@
   margin-bottom: 48px;
 
   @media (max-width: $vp-320) {
-    margin-bottom: 15px;
+    margin-bottom: -14px;
   }
 }
 
@@ -61,8 +61,10 @@
   border: 2px solid $blue;
 
   h3,
-  p {
+  p,
+  svg path {
     color: $white;
+    fill: $white;
   }
 }
 
@@ -73,11 +75,11 @@
   font-size: 24px;
   line-height: 140%;
   color: $blue;
-  margin-top: 57px;
+  margin-top: 15px;
   margin-bottom: 13px;
 
   @media (max-width: $vp-770) {
-    margin-top: 52px;
+    margin-top: 11px;
     margin-bottom: 7px;
   }
 
@@ -96,82 +98,5 @@
 
   @media (max-width: $vp-320) {
     font-size: 14px;
-  }
-}
-
-.advantages__item--deadlines::before {
-  content: "";
-  position: absolute;
-  background-image: url("../img/svg/stopwatch.svg");
-  background-repeat: no-repeat;
-  width: 35px;
-  height: 35px;
-  background-position: 0 0;
-  background-size: cover;
-
-  @media (max-width: $vp-320) {
-    width: 30px;
-    height: 30px;
-  }
-}
-
-.advantages__item--providers::before {
-  content: "";
-  position: absolute;
-  background-image: url("../img/svg/hired.svg");
-  background-repeat: no-repeat;
-  width: 35px;
-  height: 35px;
-  background-position: 0 0;
-  background-size: cover;
-
-  @media (max-width: $vp-320) {
-    width: 30px;
-    height: 30px;
-  }
-}
-
-.advantages__item--privacy {
-  @media (max-width: $vp-320) {
-    min-height: 325px;
-  }
-}
-
-
-.advantages__item--privacy::before {
-  content: "";
-  position: absolute;
-  background-image: url("../img/svg/detective.svg");
-  background-repeat: no-repeat;
-  width: 35px;
-  height: 35px;
-  background-position: 0 0;
-  background-size: cover;
-
-  @media (max-width: $vp-320) {
-    width: 30px;
-    height: 30px;
-  }
-}
-
-.advantages__item--cost::before {
-  content: "";
-  position: absolute;
-  background-image: url("../img/svg/tag.svg");
-  background-repeat: no-repeat;
-  width: 35px;
-  height: 35px;
-  background-position: 0 0;
-  background-size: cover;
-
-  @media (max-width: $vp-320) {
-    width: 30px;
-    height: 30px;
-  }
-}
-
-.advantages__item--cost {
-  @media (max-width: $vp-320) {
-    min-height: 325px;
   }
 }

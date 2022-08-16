@@ -5,8 +5,8 @@
 }
 
 .communications__title {
-  margin: 2px 0 22px;
-  padding: 0;
+  margin: 2px 0 5px;
+  padding: 0 40px;
 
   font: 400 15px/16px $font--roboto-regular;
   color: $white;
@@ -14,14 +14,21 @@
   text-transform: uppercase;
 
   @include vp-769 {
-    margin-bottom: 17px;
+    margin-bottom: 11px;
+    padding: 0;
   }
 }
 
-.communications__listf {
+.communications__list {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+
+  @include vp-769 {
+    display: none;
+    padding-left: 0;
+    margin: 0;
+  }
 }
 
 .communications__address {
@@ -36,7 +43,7 @@
 }
 
 .communications__tel {
-  margin-bottom: 6px;
+  margin-bottom: 10px;
   color: transparentize($white, 0.3);
   font-style: normal;
   outline: none;

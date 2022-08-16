@@ -3,6 +3,11 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  margin-left: 41px;
+
+  @media (max-width: $vp-770) {
+    margin-left: 0;
+  }
 }
 
 .site-sections__title {
