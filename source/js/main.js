@@ -36,15 +36,14 @@ function hideVisibleElem() {
   }
 }
 
-
 const siteSectionsElement = document.querySelector('.page-footer__site-sections');
 const contactsElement = document.querySelector('.page-footer__contacts');
 
 const siteSectionTitleElement = siteSectionsElement.querySelector('.site-sections__title');
-const contactsTitleElement = contactsElement.querySelector('.contacts__title');
+const contactsTitleElement = contactsElement.querySelector('.communications__title');
 
 const siteSectionsListElement = siteSectionsElement.querySelector('.site-sections__list');
-const contactsListElement = contactsElement.querySelector('.contacts__list');
+const contactsListElement = contactsElement.querySelector('.communications__list');
 
 function onSiteSectionsTitleClick() {
   if (siteSectionsListElement.style.display === '') {
@@ -70,14 +69,13 @@ function onContactsTitleClick() {
   }
 }
 
-const initFooter = () => {
+export const initFooter = () => {
   siteSectionsElement.classList.remove('page-footer__site-sections--nojs');
   contactsElement.classList.remove('page-footer__contacts--nojs');
 
   siteSectionTitleElement.addEventListener('click', onSiteSectionsTitleClick);
   contactsTitleElement.addEventListener('click', onContactsTitleClick);
 };
-
 // ---------------------------------
 
 // ❗❗❗ обязательно установите плагины eslint, stylelint, editorconfig в редактор кода.
