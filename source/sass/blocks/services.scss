@@ -89,6 +89,7 @@
   background-size: cover;
   background-position: center;
   background-color: $color-default-black;
+  z-index: 4;
 
   @media (max-width: $vp-1440) {
     width: 100%;

@@ -18,10 +18,11 @@
       <header class="page-header">
         <div class="page-header__container container">
           <nav class="page-header__nav contacts">
-            <a class="page-header__logo-group logo-group">
-              <svg height="55" width="215">
-                <use xlink:href="img/sprite/sprite.svg#logo"></use>
-              </svg>
+            <a class="page-header__logo">
+              <picture>
+                <source media="(max-width: 767px)" srcset="img/svg/logo-mobile.svg">
+                <img src="img/svg/logo.svg" width="215" height="52" alt="Smart Device - Умные технологии">
+              </picture>
             </a>
             <ul class="contacts__list">
               <li class="contacts__item">
@@ -29,7 +30,6 @@
                   <svg height="20" width="20">
                     <use xlink:href="img/sprite/sprite.svg#email"></use>
                   </svg>
-                  <!-- <img src="img/svg/email.svg" width="20" height="20" alt="Адрес электронной почты"> -->
                   <span class="visually-hidden">Адрес электронной почты</span>
                   <span class="contacts__mail">info@sd.ru</span>
                 </a>
@@ -39,7 +39,6 @@
                   <svg height="21" width="20">
                     <use xlink:href="img/sprite/sprite.svg#phone-call"></use>
                   </svg>
-                  <!-- <img src="img/svg/phone-call.svg" width="20" height="20" alt="Контактный телефон"> -->
                   <span class="visually-hidden">Контактный телефон</span>
                   <span class="contacts__phone">+7 (495) 000 52 52</span>
                 </a>
@@ -77,7 +76,6 @@
                 <use xlink:href="img/sprite/sprite.svg#hired"></use>
               </svg>
               <h3>Крупные поставщики</h3>
-
               <p>
                 Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.
               </p>
@@ -128,7 +126,7 @@
                   Использование инновационных технологий помогает экономить деньги и время наших клиентов
                 </p>
               </div>
-              <button class="about-company__button" id="click-to-hide-2" type="button" value="Подробнее"></button>
+              <button class="about-company__button" id="click-to-hide-2" type="button" value="Подробнее"> Подробнее</button>
             </div>
           </div>
         </section>
@@ -154,16 +152,15 @@
         <section class="feedback" id="feedback">
           <div class="feedback__layout-container container">
             <picture>
-              <!-- 1x: 510px 2x: 1020px -->
-              <source type="image/webp" srcset="img/paper-airplane.webp 1x, img/paper-airplane@2x.webp 2x">
-              <img class="feedback__image" src="img/paper-airplane.png" srcset="img/paper-airplane.png 1x, img/paper-airplane@2x.png 2x" width="510" height="285" alt="бумажный самолётик">
+              <!-- 1x: 510px; 2x: 1020px -->
+              <source type="image/webp"  srcset="img/airplane.webp 1x, img/airplane@2x.webp 2x ">
+              <img class="feedback__image" src="img/airplane.png" srcset="img/airplane.png 1x, img/airplane@2x.png 2x" width="510" height="285" alt="самолетик">
             </picture>
             <div class="feedback__container">
               <div class="feedback__group">
                 <h2>Остались вопросы? Задайте их нам!</h2>
                 <p>Мы проконсультируем Вас бесплатно</p>
               </div>
-
               <div class="form">
                 <form class="form__body" id="form" action="#" method="get">
                   <div class="form__input">
@@ -197,11 +194,6 @@
               <svg height="55" width="215">
                 <use xlink:href="img/sprite/sprite.svg#logo"></use>
               </svg>
-              <!-- <img src="img/svg/logo.svg" width="215" height="55" alt="Логотип компании"> -->
-              <!-- <div class="logo__footer">
-                <span>Smart Device</span>
-                <span>умные технологии</span>
-              </div> -->
             </a>
             <ul class="page-footer__socials socials">
               <li class="socials__item">
@@ -228,7 +220,7 @@
             </ul>
           </div>
 
-          <section class="page-footer__site-sections page-footer__site-sections--nojs site-sections">
+          <section class="page-footer__site-sections page-footer__site-sections--nojs site-sections accordion">
             <h4 class="site-sections__title">Разделы сайта</h4>
             <ul class="site-sections__list">
               <li class="site-sections__item">
@@ -255,7 +247,7 @@
             </ul>
           </section>
 
-          <section class="page-footer__contacts page-footer__contacts--nojs communications">
+          <section class="page-footer__contacts page-footer__contacts--nojs communications accordion">
             <h4 class="communications__title">Наш офис</h4>
             <ul class="communications__list">
               <li>
@@ -264,47 +256,46 @@
               <li>
                 <a class="communications__tel" href="tel:+74955894050">+7 (495) 589-40-50</a>
               </li>
-
               <li>
                 <a class="communications__tel" href="tel:+79253895829">+7 (925) 389-58-29</a>
               </li>
-
               <li>
                 <a class="communications__tel" href="tel:+79253647813">+7 (925) 364-78-13</a>
               </li>
-
             </ul>
           </section>
-
         </div>
       </footer>
-
     </div>
 
     <div class="modal modal--preload" data-modal="feedback">
       <div class="modal__wrapper">
         <div class="modal__overlay" data-close-modal></div>
         <div class="modal__content">
-          <div class="modal__form form">
+          <div class="modal__form">
             <h2>Закажите звонок</h2>
-            <p class="modal__description">Оставьте контакты, мы проконсультируем<br> вас бесплатно в удобное время</p>
+            <p>Оставьте контакты, мы проконсультируем<br> вас бесплатно в удобное время</p>
+            <div class="form">
             <form class="form__body form__body--modal" id="modalForm" action="#" method="get">
-              <input id="modalFormName" type="text" name="name" placeholder="Имя" required>
-              <label class="visually-hidden" for="modalFormName">Имя</label>
-              <input id="modalFormPhone" type="tel" name="phone" placeholder="Телефон" pattern="^[ 0-9]+$" required>
-              <label class="visually-hidden" for="modalFormPhone">Телефон</label>
-              <label class="visually-hidden" for="message">Ваш вопрос:</label>
+              <div class="form__input form__input--modal">
+                <input id="modalFormName" type="text" name="name" placeholder="Имя" required>
+                <label class="visually-hidden" for="modalFormName">Имя</label>
+                <input id="modalFormPhone" type="tel" name="phone" placeholder="Телефон" pattern="^[ 0-9]+$" required>
+                <label class="visually-hidden" for="modalFormPhone">Телефон</label>
+              </div>
+              <label class="visually-hidden" for="modalMessage">Ваш вопрос:</label>
               <textarea id="modalMessage" name="message" rows="7" placeholder="Ваш вопрос" required></textarea>
-              <div class="modal__form-checkbox-modal">
-                <button class="modal__form-button" type="submit">Отправить</button>
-                <div class="modal__form-check">
+              <div class="form__checkbox form__checkbox--modal">
+                <button class="form__button form__button--modal" type="submit">Отправить</button>
+                <div class="form__check form__check--modal">
                   <input id="modalFormAgreement" type="checkbox" name="agreement" checked required>
-                  <label class="modal__form-checkbox-lable" for="modalFormAgreement">
+                  <label class="form__checkbox-label form__checkbox-label--modal" for="modalFormAgreement">
                     Я согласен на обработку персональных данных
                   </label>
                 </div>
               </div>
             </form>
+            </div>
           </div>
           <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
             <svg height="20" width="20">
