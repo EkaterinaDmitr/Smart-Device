@@ -88,6 +88,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-color: $color-default-black;
 
   @media (max-width: $vp-1440) {
     width: 100%;
@@ -131,37 +132,37 @@
 }
 
 .services__item--productions {
-  background-image: url("../img/produkr-1.jpg");
+  background-image: url("../img/product-1.jpg");
 
   @media (max-width: $vp-1440) {
-    background-image: url("../img/produkr-1-tablet.jpg");
+    background-image: url("../img/product-1-tablet.jpg");
   }
 
   @media (max-width: $vp-320) {
-    background-image: url("../img/produkt-1-mobile.jpg");
+    background-image: url("../img/product-1-mobile.jpg");
   }
 }
 
 .services__item--montage {
-  background-image: url("../img/produkt-2.jpg");
+  background-image: url("../img/product-2.jpg");
 
   @media (max-width: $vp-1440) {
-    background-image: url("../img/produkt-2-tablet.jpg");
+    background-image: url("../img/product-2-tablet.jpg");
   }
 
   @media (max-width: $vp-320) {
-    background-image: url("../img/produkt-2-mobile.jpg");
+    background-image: url("../img/product-2-mobile.jpg");
   }
 }
 
 .services__item--components {
-  background-image: url("../img/produkt-3.jpg");
+  background-image: url("../img/product-3.jpg");
 
   @media (max-width: $vp-1440) {
-    background-image: url("../img/produkt-3-tablet.jpg");
+    background-image: url("../img/product-3-tablet.jpg");
   }
 
   @media (max-width: $vp-320) {
-    background-image: url("../img/produkt-3-mobile.jpg");
+    background-image: url("../img/product-3-mobile.jpg");
   }
 }

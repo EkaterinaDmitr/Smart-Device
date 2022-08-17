@@ -33,10 +33,10 @@ $fz-default:                        16px;
 // у некоторых шрифтов в ios возникают проблемы с символом рубля
 // https://www.artlebedev.ru/kovodstvo/sections/159/#13
 
-$font--pt-mono:                     "PTMono-Regular", "Times New Roman", serif;
-$font--roboto-regular:              "RobotoCondensed-Regular", "Arial", sans-serif;
-$font--roboto-medium:               "Roboto-Medium", "Arial", sans-serif;
-$font--roboto-bold:                 "RobotoCondensed-Bold", "Arial", sans-serif;
+$font--pt-mono:                     "PTMono", "Courier", Monospace;
+$font--roboto-regular:              "RobotoCondensed", "Arial", sans-serif;
+$font--roboto-medium:               "Roboto", "Arial", sans-serif;
+$font--roboto-bold:                 "RobotoCondensed", "Arial", sans-serif;
 
 
 // Animation

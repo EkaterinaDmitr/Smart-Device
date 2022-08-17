@@ -68,7 +68,7 @@
     margin: 0 0 20px;
   }
 
-  @media (max-width: $vp-770) {
+  @media (max-width: $vp-320) {
     margin: 0 0 18px;
   }
 }
@@ -138,11 +138,11 @@
   top: 20px;
 }
 
-.form__checkbox input:checked + .form__checkbox__lable::after {
+.form__checkbox input:checked + .form__checkbox-label::after {
   transform: scale(1);
 }
 
-.form__checkbox__lable {
+.form__checkbox-label {
   position: relative;
   font-size: 14px;
   line-height: 16px;
@@ -152,7 +152,7 @@
   margin-top: 13px;
 }
 
-.form__checkbox__lable::before {
+.form__checkbox-label::before {
   content: "";
   flex: 0 0 15px;
   height: 15px;
@@ -163,7 +163,7 @@
   margin-top: 7px;
 }
 
-.form__checkbox__lable::after {
+.form__checkbox-label::after {
   content: "";
   width: 16px;
   height: 15px;

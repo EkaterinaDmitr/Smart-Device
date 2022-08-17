@@ -36,6 +36,7 @@ function hideVisibleElem() {
   }
 }
 
+
 const siteSectionsElement = document.querySelector('.page-footer__site-sections');
 const contactsElement = document.querySelector('.page-footer__contacts');
 
@@ -69,7 +70,7 @@ function onContactsTitleClick() {
   }
 }
 
-export const initFooter = () => {
+const initFooter = () => {
   siteSectionsElement.classList.remove('page-footer__site-sections--nojs');
   contactsElement.classList.remove('page-footer__contacts--nojs');
 

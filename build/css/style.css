@@ -385,35 +385,35 @@ template {
 }
 
 @font-face {
-  font-family: "PTMono-Regular";
+  font-family: "PTMono";
   font-weight: 400;
   font-style: normal;
   font-display: swap;
-  src: local("PTMono"), local("PTMono-Regular"), url("../../fonts/PTMono-Regular.woff2") format("woff2"), url("../../fonts/PTMono-Regular.woff") format("woff");
+  src: local("PTMono"), url("../fonts/PTMono-Regular.woff2") format("woff2"), url("../fonts/PTMono-Regular.woff") format("woff");
 }
 
 @font-face {
-  font-family: "RobotoCondensed-Regular";
+  font-family: "RobotoCondensed";
   font-weight: 400;
   font-style: normal;
   font-display: swap;
-  src: local("RobotoCondensed"), local("RobotoCondensed-Regular"), url("../../fonts/RobotoCondensed-Regular.woff2") format("woff2"), url("../../fonts/RobotoCondensed-Regular.woff") format("woff");
+  src: local("RobotoCondensed"), url("../fonts/RobotoCondensed-Regular.woff2") format("woff2"), url("../fonts/RobotoCondensed-Regular.woff") format("woff");
 }
 
 @font-face {
-  font-family: "RobotoCondensed-Bold";
+  font-family: "RobotoCondensed";
   font-weight: 700;
   font-style: normal;
   font-display: swap;
-  src: local("RobotoCondensed"), local("RobotoCondensed-Bold"), url("../../fonts/RobotoCondensed-Bold.woff2") format("woff2"), url("../../fonts/RobotoCondensed-Bold.woff") format("woff");
+  src: local("RobotoCondensed"), url("../fonts/RobotoCondensed-Bold.woff2") format("woff2"), url("../fonts/RobotoCondensed-Bold.woff") format("woff");
 }
 
 @font-face {
-  font-family: "Roboto-Medium";
+  font-family: "Roboto";
   font-weight: 500;
   font-style: normal;
   font-display: swap;
-  src: local("Roboto"), local("Roboto-Medium"), url("../../fonts/Roboto-Medium.woff2") format("woff2"), url("../../fonts/Roboto-Medium.woff") format("woff");
+  src: local("Roboto"), url("../fonts/Roboto-Medium.woff2") format("woff2"), url("../fonts/Roboto-Medium.woff") format("woff");
 }
 
 *,
@@ -436,7 +436,7 @@ html {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  font-family: "PTMono-Regular", "Times New Roman", serif;
+  font-family: "PTMono", "Courier", Monospace;
   color: #041827;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -709,7 +709,7 @@ button,
 }
 
 .modal__form h2 {
-  font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
+  font-family: "RobotoCondensed", "Arial", sans-serif;
   font-weight: 400;
   font-size: 30px;
   line-height: 140.62%;
@@ -718,7 +718,7 @@ button,
 }
 
 .modal__form p {
-  font-family: "PTMono-Regular", "Times New Roman", serif;
+  font-family: "PTMono", "Courier", Monospace;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
@@ -818,20 +818,6 @@ button,
   flex-direction: column;
 }
 
-.modal__form-body input {
-  font-family: "PTMono-Regular", "Times New Roman", serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
-  color: #ffffff;
-  background-color: rgba(4, 20, 39, 0.15);
-  border-radius: 3px;
-  border: none;
-  margin-bottom: 20px;
-  margin-right: 0;
-  padding: 15px 60px 15px 15px;
-}
-
 .modal__form-check {
   position: relative;
 }
@@ -890,7 +876,7 @@ button,
 }
 
 .modal__form-button {
-  font-family: "RobotoCondensed-Bold", "Arial", sans-serif;
+  font-family: "RobotoCondensed", "Arial", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 19px;
@@ -959,7 +945,7 @@ button,
 }
 
 .logo-group__text span:first-child {
-  font-family: "RobotoCondensed-Bold", "Arial", sans-serif;
+  font-family: "RobotoCondensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 25px;
@@ -968,7 +954,7 @@ button,
 }
 
 .logo-group__text span:last-child {
-  font-family: "Roboto-Medium", "Arial", sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   font-style: normal;
   font-size: 12px;
   line-height: 14px;
@@ -1025,7 +1011,7 @@ button,
   padding: 10px 15px;
   color: #f2f5f7;
   text-transform: uppercase;
-  font-family: "RobotoCondensed-Bold", "Arial", sans-serif;
+  font-family: "RobotoCondensed", "Arial", sans-serif;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.05em;
@@ -1047,7 +1033,7 @@ button,
 }
 
 .main-page__header {
-  font-family: "RobotoCondensed-Bold", "Arial", sans-serif;
+  font-family: "RobotoCondensed", "Arial", sans-serif;
   font-style: normal;
   font-size: 80px;
   line-height: 94px;
@@ -1058,7 +1044,7 @@ button,
 }
 
 .main-page__paragraph {
-  font-family: "PTMono-Regular", "Times New Roman", serif;
+  font-family: "PTMono", "Courier", Monospace;
   font-style: normal;
   font-size: 22px;
   line-height: 155%;
@@ -1067,7 +1053,7 @@ button,
 }
 
 .main-page__button {
-  font-family: "RobotoCondensed-Bold", "Arial", sans-serif;
+  font-family: "RobotoCondensed", "Arial", sans-serif;
   font-style: normal;
   font-size: 18px;
   line-height: 21px;
@@ -1092,7 +1078,7 @@ button,
 
 .main-page__mobile-button {
   display: none;
-  font-family: "RobotoCondensed-Bold", "Arial", sans-serif;
+  font-family: "RobotoCondensed", "Arial", sans-serif;
   font-style: normal;
   font-size: 14px;
   line-height: 16px;
@@ -1140,13 +1126,13 @@ button,
 
 .advantages__item:hover h3,
 .advantages__item:hover p,
-.advantages__item:hover svg path {
+.advantages__item:hover path {
   color: #ffffff;
   fill: #ffffff;
 }
 
 .advantages__item h3 {
-  font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
+  font-family: "RobotoCondensed", "Arial", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 24px;
@@ -1157,7 +1143,7 @@ button,
 }
 
 .advantages__item p {
-  font-family: "PTMono-Regular", "Times New Roman", serif;
+  font-family: "PTMono", "Courier", Monospace;
   font-style: normal;
   font-size: 16px;
   line-height: 135%;
@@ -1170,7 +1156,7 @@ button,
 }
 
 .about-company h2 {
-  font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
+  font-family: "RobotoCondensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -1199,7 +1185,7 @@ button,
 }
 
 .about-company__text {
-  font-family: "PTMono-Regular", "Times New Roman", serif;
+  font-family: "PTMono", "Courier", Monospace;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1222,7 +1208,7 @@ button,
 }
 
 .about-company__button {
-  font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
+  font-family: "RobotoCondensed", "Arial", sans-serif;
   background-color: transparent;
   cursor: pointer;
   font-weight: 700;
@@ -1256,7 +1242,7 @@ button,
 
 .services__container h2 {
   color: #ffffff;
-  font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
+  font-family: "RobotoCondensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -1282,7 +1268,7 @@ button,
 }
 
 .services__list h3 {
-  font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
+  font-family: "RobotoCondensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -1298,6 +1284,7 @@ button,
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-color: #000000;
 }
 
 .services__item:hover {
@@ -1322,15 +1309,15 @@ button,
 }
 
 .services__item--productions {
-  background-image: url("../img/produkr-1.jpg");
+  background-image: url("../img/product-1.jpg");
 }
 
 .services__item--montage {
-  background-image: url("../img/produkt-2.jpg");
+  background-image: url("../img/product-2.jpg");
 }
 
 .services__item--components {
-  background-image: url("../img/produkt-3.jpg");
+  background-image: url("../img/product-3.jpg");
 }
 
 .feedback {
@@ -1360,14 +1347,13 @@ button,
 
 .feedback__image {
   z-index: 2;
-  height: 100%;
   margin-right: 120px;
   margin-top: 110px;
   margin-left: -40px;
 }
 
 .feedback__group h2 {
-  font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
+  font-family: "RobotoCondensed", "Arial", sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 51px;
@@ -1377,7 +1363,7 @@ button,
 }
 
 .feedback__group p {
-  font-family: "PTMono-Regular", "Times New Roman", serif;
+  font-family: "PTMono", "Courier", Monospace;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1482,7 +1468,7 @@ button,
 }
 
 .form__body input {
-  font-family: "PTMono-Regular", "Times New Roman", serif;
+  font-family: "PTMono", "Courier", Monospace;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
@@ -1536,13 +1522,13 @@ button,
   top: 20px;
 }
 
-.form__checkbox input:checked + .form__checkbox__lable::after {
+.form__checkbox input:checked + .form__checkbox-label::after {
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
 }
 
-.form__checkbox__lable {
+.form__checkbox-label {
   position: relative;
   font-size: 14px;
   line-height: 16px;
@@ -1554,7 +1540,7 @@ button,
   margin-top: 13px;
 }
 
-.form__checkbox__lable::before {
+.form__checkbox-label::before {
   content: "";
   -webkit-box-flex: 0;
   -ms-flex: 0 0 15px;
@@ -1567,7 +1553,7 @@ button,
   margin-top: 7px;
 }
 
-.form__checkbox__lable::after {
+.form__checkbox-label::after {
   content: "";
   width: 16px;
   height: 15px;
@@ -1582,7 +1568,7 @@ button,
 }
 
 .form__button {
-  font-family: "RobotoCondensed-Bold", "Arial", sans-serif;
+  font-family: "RobotoCondensed", "Arial", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 19px;
@@ -1618,7 +1604,7 @@ button,
 }
 
 .logo__footer span:first-child {
-  font-family: "RobotoCondensed-Bold", "Arial", sans-serif;
+  font-family: "RobotoCondensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 25px;
@@ -1627,7 +1613,7 @@ button,
 }
 
 .logo__footer span:last-child {
-  font-family: "Roboto-Medium", "Arial", sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   font-style: normal;
   font-size: 12px;
   line-height: 14px;
@@ -1686,7 +1672,7 @@ button,
 .site-sections__title {
   margin: 2px 0 22px;
   padding: 0;
-  font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
+  font-family: "RobotoCondensed", "Arial", sans-serif;
   font-size: 15px;
   line-height: 16px;
   color: #ffffff;
@@ -1717,7 +1703,7 @@ button,
 }
 
 .site-sections__link {
-  font: 400 16px/135% "PTMono-Regular", "Times New Roman", serif;
+  font: 400 16px/135% "PTMono", "Courier", Monospace;
   color: rgba(255, 255, 255, 0.7);
   outline: none;
 }
@@ -1738,7 +1724,7 @@ button,
 .communications__title {
   margin: 2px 0 5px;
   padding: 0 40px;
-  font: 400 15px/16px "RobotoCondensed-Regular", "Arial", sans-serif;
+  font: 400 15px/16px "RobotoCondensed", "Arial", sans-serif;
   color: #ffffff;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -1755,6 +1741,7 @@ button,
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
+  list-style: none;
 }
 
 .communications__address {
@@ -1832,15 +1819,15 @@ button,
   }
 
   .services__item--productions {
-    background-image: url("../img/produkr-1-tablet.jpg");
+    background-image: url("../img/product-1-tablet.jpg");
   }
 
   .services__item--montage {
-    background-image: url("../img/produkt-2-tablet.jpg");
+    background-image: url("../img/product-2-tablet.jpg");
   }
 
   .services__item--components {
-    background-image: url("../img/produkt-3-tablet.jpg");
+    background-image: url("../img/product-3-tablet.jpg");
   }
 
   .feedback {
@@ -1885,6 +1872,15 @@ button,
 
   .about-company__text {
     line-height: 22px;
+  }
+
+  .site-sections {
+    margin-left: 15px;
+  }
+
+  .site-sections__item {
+    width: 200px;
+    margin-right: 10px;
   }
 }
 
@@ -1987,7 +1983,8 @@ button,
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
-    margin: 11px 42px 0 auto;
+    margin: 7px 11px 0 auto;
+    padding-right: 11px;
   }
 
   .contacts__item:not(:last-child) {
@@ -2115,10 +2112,6 @@ button,
 
   .form__body input {
     margin: 0 0 20px;
-  }
-
-  .form__body input {
-    margin: 0 0 18px;
   }
 
   .form__body textarea {
@@ -2270,14 +2263,6 @@ button,
     background-color: #00b2ff;
   }
 
-  .page-footer__site-sections .site-sections__title {
-    cursor: pointer;
-  }
-
-  .page-footer__site-sections .site-sections__list {
-    display: none;
-  }
-
   .page-footer__site-sections.is-opened::after {
     -webkit-transform: rotate(0deg);
     -ms-transform: rotate(0deg);
@@ -2290,14 +2275,6 @@ button,
 
   .page-footer__site-sections--nojs::after {
     display: block;
-  }
-
-  .page-footer__site-sections--nojs .site-sections__title {
-    cursor: default;
-  }
-
-  .page-footer__site-sections--nojs .site-sections__list {
-    display: none;
   }
 
   .page-footer__contacts {
@@ -2331,30 +2308,12 @@ button,
     background-color: #00b2ff;
   }
 
-  .page-footer__contacts .contacts__title {
-    cursor: pointer;
-  }
-
-  .page-footer__contacts .contacts__listf {
-    display: none;
-  }
-
   .page-footer__contacts--nojs::before {
     display: none;
   }
 
   .page-footer__contacts--nojs::after {
     display: none;
-  }
-
-  .page-footer__contacts--nojs .contacts__title {
-    cursor: default;
-  }
-
-  .page-footer__contacts--nojs .contacts__listf {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
   }
 
   .form__input {
@@ -2370,10 +2329,16 @@ button,
 
   .site-sections__title {
     margin-bottom: 0;
+    cursor: pointer;
+  }
+
+  .site-sections__title--nojs {
+    cursor: default;
   }
 
   .site-sections__list {
     margin-top: 22px;
+    display: none;
   }
 
   .communications__title {
@@ -2388,12 +2353,12 @@ button,
   }
 
   .communications__address {
-    font: 400 14px/135% "PTMono-Regular", "Times New Roman", serif;
+    font: 400 14px/135% "PTMono", "Courier", Monospace;
     margin-bottom: 22px;
   }
 
   .communications__tel {
-    font: 400 14px/135% "PTMono-Regular", "Times New Roman", serif;
+    font: 400 14px/135% "PTMono", "Courier", Monospace;
     margin-bottom: 12px;
   }
 }
@@ -2435,7 +2400,7 @@ button,
 
 @media (max-width: 320px) {
   .contacts__list {
-    margin: 5px 37px 0 auto;
+    margin: 5px 25px 0 auto;
   }
 
   .contacts__item-svg img {
@@ -2564,15 +2529,15 @@ button,
   }
 
   .services__item--productions {
-    background-image: url("../img/produkt-1-mobile.jpg");
+    background-image: url("../img/product-1-mobile.jpg");
   }
 
   .services__item--montage {
-    background-image: url("../img/produkt-2-mobile.jpg");
+    background-image: url("../img/product-2-mobile.jpg");
   }
 
   .services__item--components {
-    background-image: url("../img/produkt-3-mobile.jpg");
+    background-image: url("../img/product-3-mobile.jpg");
   }
 
   .feedback__layout-container {
@@ -2593,6 +2558,10 @@ button,
 
   .form {
     margin-top: 34px;
+  }
+
+  .form__body input {
+    margin: 0 0 18px;
   }
 
   .form__body textarea {
@@ -2618,7 +2587,7 @@ button,
 
 @media (max-width: 320px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 320px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 320px) and (min-resolution: 144dpi), (max-width: 320px) and (min-resolution: 1.5dppx) {
   .main-page {
-    background-image: url("../../img/mobile-bg-image@2x.jpg");
+    background-image: url("../img/mobile-bg-image@2x.jpg");
   }
 }
 
