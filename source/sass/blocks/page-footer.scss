@@ -131,14 +131,6 @@
       transform: rotate(90deg);
       background-color: $blue;
     }
-
-    .site-sections__title {
-      cursor: pointer;
-    }
-
-    .site-sections__list {
-      display: none;
-    }
   }
 
   &.is-opened {
@@ -159,13 +151,13 @@
         display: block;
       }
 
-      .site-sections__title {
-        cursor: default;
-      }
+      // .site-sections__title {
+      //   cursor: default;
+      // }
 
-      .site-sections__list {
-        display: none;
-      }
+      // .site-sections__list {
+      //   display: none;
+      // }
     }
   }
 }
@@ -209,14 +201,6 @@
       background-color: $blue;
     }
 
-    .contacts__title {
-      cursor: pointer;
-    }
-
-    .contacts__listf {
-      display: none;
-    }
-
     &.is-opened {
       @include vp-769 {
         &::after {
@@ -234,14 +218,6 @@
 
       &::after {
         display: none;
-      }
-
-      .contacts__title {
-        cursor: default;
-      }
-
-      .contacts__listf {
-        display: flex;
       }
     }
   }

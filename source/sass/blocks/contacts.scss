@@ -7,11 +7,12 @@
   @media (max-width: $vp-770) {
     padding: 0;
     justify-content: flex-end;
-    margin: 11px 42px 0 auto;
+    margin: 7px 11px 0 auto;
+    padding-right: 11px;
   }
 
   @media (max-width: $vp-320) {
-    margin: 5px 37px 0 auto;
+    margin: 5px 25px 0 auto;
   }
 }
 

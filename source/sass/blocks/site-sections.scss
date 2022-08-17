@@ -5,6 +5,10 @@
   align-items: flex-start;
   margin-left: 41px;
 
+  @media (max-width: $vp-1280) {
+    margin-left: 15px;
+  }
+
   @media (max-width: $vp-770) {
     margin-left: 0;
   }
@@ -22,6 +26,11 @@
 
   @include vp-769 {
     margin-bottom: 0;
+    cursor: pointer;
+
+    &--nojs {
+      cursor: default;
+    }
   }
 }
 
@@ -42,6 +51,8 @@
 
   @include vp-769 {
     margin-top: 22px;
+    display: none;
+
   }
 }
 
@@ -49,6 +60,11 @@
   width: 220px;
   margin-right: 30px;
   margin-bottom: 5px;
+
+  @media (max-width: $vp-1280) {
+    width: 200px;
+    margin-right: 10px;
+  }
 }
 
 .site-sections__link {
