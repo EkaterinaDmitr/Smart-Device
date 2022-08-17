@@ -56,17 +56,31 @@
   }
 }
 
+.advantages__item svg {
+  fill: $blue;
+}
+
 .advantages__item:hover {
   background-color: $blue;
   border: 2px solid $blue;
 
   h3,
   p,
-  path {
+  svg {
     color: $white;
     fill: $white;
   }
 }
+
+// .advantages__item svg:hover {
+// path {
+//     fill: white;
+
+// }
+
+
+
+// }
 
 .advantages__item h3 {
   font-family: $font--roboto-regular;

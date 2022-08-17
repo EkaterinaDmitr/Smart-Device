@@ -55,16 +55,9 @@
   }
 
   @include vp-769 {
-    margin: 0 auto 24px;
+    margin: 0 auto 20px;
     position: relative;
-    left: -9px;
-  }
-
-  svg {
-    @include vp-769 {
-      width: 55px;
-      height: 55px;
-    }
+    left: -2px;
   }
 
   p:first-of-type {

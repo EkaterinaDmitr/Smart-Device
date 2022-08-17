@@ -23,59 +23,43 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
 const clickToHide2 = document.querySelector('#click-to-hide-2');
-clickToHide2.addEventListener('click', hideVisibleElem);
+if (clickToHide2) {
+  clickToHide2.addEventListener('click', hideVisibleElem);
+}
 
 function hideVisibleElem() {
   let wpcraftBox2 = document.querySelector('.wpcraft-box-2');
   wpcraftBox2.classList.toggle('about-company__continuation');
 
   if (wpcraftBox2.classList.contains('about-company__continuation')) {
-    clickToHide2.value = 'Подробнее';
+    clickToHide2.innerHTML = 'Подробнее';
   } else {
-    clickToHide2.value = 'Свернуть';
+    clickToHide2.innerHTML = 'Свернуть';
   }
 }
 
 
-const siteSectionsElement = document.querySelector('.page-footer__site-sections');
-const contactsElement = document.querySelector('.page-footer__contacts');
+const accordions = document.querySelectorAll('.accordion');
 
-const siteSectionTitleElement = siteSectionsElement.querySelector('.site-sections__title');
-const contactsTitleElement = contactsElement.querySelector('.communications__title');
-
-const siteSectionsListElement = siteSectionsElement.querySelector('.site-sections__list');
-const contactsListElement = contactsElement.querySelector('.communications__list');
-
-function onSiteSectionsTitleClick() {
-  if (siteSectionsListElement.style.display === '') {
-    siteSectionsListElement.style.display = 'flex';
-    siteSectionsElement.classList.add('is-opened');
-    contactsListElement.style.display = '';
-    contactsElement.classList.remove('is-opened');
-  } else {
-    siteSectionsListElement.style.display = '';
-    siteSectionsElement.classList.remove('is-opened');
-  }
-}
-
-function onContactsTitleClick() {
-  if (contactsListElement.style.display === '') {
-    contactsListElement.style.display = 'flex';
-    contactsElement.classList.add('is-opened');
-    siteSectionsListElement.style.display = '';
-    siteSectionsElement.classList.remove('is-opened');
-  } else {
-    contactsListElement.style.display = '';
-    contactsElement.classList.remove('is-opened');
-  }
+function onAccordionClick(e) {
+  accordions.forEach((accordion) => {
+    accordion.classList.remove('is-opened');
+    const ul = accordion.querySelector('ul');
+    ul.style.display = '';
+  });
+  const accordion = e.currentTarget;
+  const currentUl = accordion.querySelector('ul');
+  accordion.classList.add('is-opened');
+  currentUl.style.display = 'flex';
 }
 
 const initFooter = () => {
+  const siteSectionsElement = document.querySelector('.page-footer__site-sections');
+  const contactsElement = document.querySelector('.page-footer__contacts');
   siteSectionsElement.classList.remove('page-footer__site-sections--nojs');
   contactsElement.classList.remove('page-footer__contacts--nojs');
 
-  siteSectionTitleElement.addEventListener('click', onSiteSectionsTitleClick);
-  contactsTitleElement.addEventListener('click', onContactsTitleClick);
+  accordions.forEach((acc) => acc.addEventListener('click', onAccordionClick));
 };
 // ---------------------------------
 
