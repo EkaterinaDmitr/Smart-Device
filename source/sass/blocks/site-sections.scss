@@ -52,7 +52,6 @@
   @include vp-769 {
     margin-top: 22px;
     display: none;
-
   }
 }
 
@@ -62,7 +61,7 @@
   margin-bottom: 5px;
 
   @media (max-width: $vp-1280) {
-    width: 200px;
+    width: 202px;
     margin-right: 10px;
   }
 }

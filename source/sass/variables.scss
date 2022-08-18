@@ -33,7 +33,7 @@ $fz-default:                        16px;
 // у некоторых шрифтов в ios возникают проблемы с символом рубля
 // https://www.artlebedev.ru/kovodstvo/sections/159/#13
 
-$font--pt-mono:                     "PTMono", "Courier", Monospace;
+$font--pt-mono:                     "PTMono", "Courier", monospace;
 $font--roboto-regular:              "RobotoCondensed", "Arial", sans-serif;
 $font--roboto-medium:               "Roboto", "Arial", sans-serif;
 $font--roboto-bold:                 "RobotoCondensed", "Arial", sans-serif;

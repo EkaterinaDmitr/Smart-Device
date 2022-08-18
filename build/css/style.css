@@ -436,7 +436,7 @@ html {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  font-family: "PTMono", "Courier", Monospace;
+  font-family: "PTMono", "Courier", monospace;
   color: #041827;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -723,7 +723,7 @@ button,
 }
 
 .modal__form p {
-  font-family: "PTMono", "Courier", Monospace;
+  font-family: "PTMono", "Courier", monospace;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
@@ -818,7 +818,6 @@ button,
   display: -ms-flexbox;
   display: flex;
   list-style: none;
-  padding-left: 28px;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   padding-left: 14px;
@@ -900,7 +899,8 @@ button,
 }
 
 .main-page {
-  background-image: url("../img/desktop-bg-image.jpg");
+  background-image: -webkit-image-set(url("../img/desktop-bg-image.jpg") 1x, url("../img/desctop-bg-image@2x.jpg") 2x);
+  background-image: image-set("../img/desktop-bg-image.jpg" 1x, "../img/desctop-bg-image@2x.jpg" 2x);
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #041827;
@@ -921,7 +921,7 @@ button,
 }
 
 .main-page__paragraph {
-  font-family: "PTMono", "Courier", Monospace;
+  font-family: "PTMono", "Courier", monospace;
   font-style: normal;
   font-size: 22px;
   line-height: 155%;
@@ -1024,7 +1024,7 @@ button,
 }
 
 .advantages__item p {
-  font-family: "PTMono", "Courier", Monospace;
+  font-family: "PTMono", "Courier", monospace;
   font-style: normal;
   font-size: 16px;
   line-height: 135%;
@@ -1057,7 +1057,8 @@ button,
 .about-company__block::before {
   content: "";
   position: absolute;
-  background-image: url("../img/about-company.png");
+  background-image: -webkit-image-set(url("../img/about-company.png") 1x, url("../img/about-company@2x.png") 2x);
+  background-image: image-set("../img/about-company.png" 1x, "../img/about-company@2x.png" 2x);
   background-repeat: no-repeat;
   width: 200px;
   height: 320px;
@@ -1066,7 +1067,7 @@ button,
 }
 
 .about-company__text {
-  font-family: "PTMono", "Courier", Monospace;
+  font-family: "PTMono", "Courier", monospace;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1191,15 +1192,18 @@ button,
 }
 
 .services__item--productions {
-  background-image: url("../img/product-1.jpg");
+  background-image: -webkit-image-set(url("../img/product-1.jpg") 1x, url("../img/product-1@2x.jpg") 2x);
+  background-image: image-set("../img/product-1.jpg" 1x, "../img/product-1@2x.jpg" 2x);
 }
 
 .services__item--montage {
-  background-image: url("../img/product-2.jpg");
+  background-image: -webkit-image-set(url("../img/product-2.jpg") 1x, url("../img/product-2@2x.jpg") 2x);
+  background-image: image-set("../img/product-2.jpg" 1x, "../img/product-2@2x.jpg" 2x);
 }
 
 .services__item--components {
-  background-image: url("../img/product-3.jpg");
+  background-image: -webkit-image-set(url("../img/product-3.jpg") 1x, url("../img/product-3@2x.jpg") 2x);
+  background-image: image-set("../img/product-3.jpg" 1x, "../img/product-3@2x.jpg" 2x);
 }
 
 .feedback {
@@ -1251,7 +1255,7 @@ button,
 }
 
 .feedback__group p {
-  font-family: "PTMono", "Courier", Monospace;
+  font-family: "PTMono", "Courier", monospace;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1366,7 +1370,7 @@ button,
 }
 
 .form__body input {
-  font-family: "PTMono", "Courier", Monospace;
+  font-family: "PTMono", "Courier", monospace;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
@@ -1492,7 +1496,7 @@ button,
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #ffffff;
-  padding: 13px 69px;
+  padding: 15px 67px 13px;
   background-color: #041827;
   border: none;
   border-radius: 3px;
@@ -1623,7 +1627,7 @@ button,
 }
 
 .site-sections__link {
-  font: 400 16px/135% "PTMono", "Courier", Monospace;
+  font: 400 16px/135% "PTMono", "Courier", monospace;
   color: rgba(255, 255, 255, 0.7);
   outline: none;
 }
@@ -1740,15 +1744,18 @@ button,
   }
 
   .services__item--productions {
-    background-image: url("../img/product-1-tablet.jpg");
+    background-image: -webkit-image-set(url("../img/product-1-tablet.jpg") 1x, url("../img/product-1-tablet@2x.jpg") 2x);
+    background-image: image-set("../img/product-1-tablet.jpg" 1x, "../img/product-1-tablet@2x.jpg" 2x);
   }
 
   .services__item--montage {
-    background-image: url("../img/product-2-tablet.jpg");
+    background-image: -webkit-image-set(url("../img/product-2-tablet.jpg") 1x, url("../img/product-2-tablet@2x.jpg") 2x);
+    background-image: image-set("../img/product-2-tablet.jpg" 1x, "../img/product-2-tablet@2x.jpg" 2x);
   }
 
   .services__item--components {
-    background-image: url("../img/product-3-tablet.jpg");
+    background-image: -webkit-image-set(url("../img/product-3-tablet.jpg") 1x, url("../img/product-3-tablet@2x.jpg") 2x);
+    background-image: image-set("../img/product-3-tablet.jpg" 1x, "../img/product-3-tablet@2x.jpg" 2x);
   }
 
   .feedback {
@@ -1783,7 +1790,7 @@ button,
   }
 
   .site-sections__item {
-    width: 200px;
+    width: 202px;
     margin-right: 10px;
   }
 }
@@ -1925,7 +1932,8 @@ button,
   }
 
   .main-page {
-    background-image: url("../img/tablet-bg-image.jpg");
+    background-image: -webkit-image-set(url("../img/tablet-bg-image.jpg") 1x, url("../img/tablet-bg-image@2x.jpg") 2x);
+    background-image: image-set("../img/tablet-bg-image.jpg" 1x, "../img/tablet-bg-image@2x.jpg" 2x);
     min-height: 640px;
     margin-bottom: 79px;
   }
@@ -1953,7 +1961,7 @@ button,
   }
 
   .advantages__item {
-    padding: 38px 35px 0 40px;
+    padding: 38px 35px 20px 40px;
     min-height: 360px;
   }
 
@@ -2042,12 +2050,6 @@ button,
   }
 }
 
-@media (max-width: 770px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 770px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 770px) and (min-resolution: 144dpi), (max-width: 770px) and (min-resolution: 1.5dppx) {
-  .main-page {
-    background-image: url("../img/tablet-bg-image@2x.jpg");
-  }
-}
-
 @media (max-width: 770px) and (max-width: 320px) {
   .about-company__container h2 {
     margin-bottom: 23px;
@@ -2073,7 +2075,11 @@ button,
   }
 
   .contacts__list {
-    margin: 5px 10px 0 auto;
+    margin: 5px -7px 0 auto;
+  }
+
+  .contacts__item:not(:last-child) {
+    margin-left: 0;
   }
 
   .main-page__header {
@@ -2097,12 +2103,36 @@ button,
     min-width: 270px;
   }
 
+  .advantages__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+  }
+
   .about-company__container {
     margin: 0;
   }
 
   .about-company__block::before {
     display: none;
+  }
+
+  .services__container h2 {
+    display: none;
+  }
+
+  .services__container h2.services__header-mobile {
+    display: block;
+    padding-top: 36px;
+    font-size: 28px;
+    line-height: 140.62%;
   }
 
   .page-footer .container {
@@ -2289,12 +2319,12 @@ button,
   }
 
   .communications__address {
-    font: 400 14px/135% "PTMono", "Courier", Monospace;
+    font: 400 14px/135% "PTMono", "Courier", monospace;
     margin-bottom: 22px;
   }
 
   .communications__tel {
-    font: 400 14px/135% "PTMono", "Courier", Monospace;
+    font: 400 14px/135% "PTMono", "Courier", monospace;
     margin-bottom: 12px;
   }
 }
@@ -2314,21 +2344,6 @@ button,
   }
 }
 
-@media (max-width: 700px) {
-  .advantages__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
-}
-
 @media (max-width: 600px) {
   .form__body {
     display: -webkit-box;
@@ -2342,6 +2357,10 @@ button,
 }
 
 @media (max-width: 320px) {
+  .contacts__list {
+    margin-right: 17px;
+  }
+
   .contacts__item-svg img {
     margin-right: 8px;
   }
@@ -2356,7 +2375,8 @@ button,
   }
 
   .main-page {
-    background-image: url("../img/mobile-bg-image.jpg");
+    background-image: -webkit-image-set(url("../img/mobile-bg-image.jpg") 1x, url("../img/mobile-bg-image@2x.jpg") 2x);
+    background-image: image-set("../img/mobile-bg-image.jpg" 1x, "../img/mobile-bg-image@2x.jpg" 2x);
     min-height: 560px;
     margin-bottom: 39px;
   }
@@ -2417,17 +2437,6 @@ button,
     padding-bottom: 89px;
   }
 
-  .services__container h2 {
-    display: none;
-  }
-
-  .services__container h2.services__header-mobile {
-    display: block;
-    padding-top: 36px;
-    font-size: 28px;
-    line-height: 140.62%;
-  }
-
   .services__list {
     margin-top: 28px;
   }
@@ -2448,15 +2457,18 @@ button,
   }
 
   .services__item--productions {
-    background-image: url("../img/product-1-mobile.jpg");
+    background-image: -webkit-image-set(url("../img/product-1-mobile.jpg") 1x, url("../img/product-1-mobile@2x.jpg") 2x);
+    background-image: image-set("../img/product-1-mobile.jpg" 1x, "../img/product-1-mobile@2x.jpg" 2x);
   }
 
   .services__item--montage {
-    background-image: url("../img/product-2-mobile.jpg");
+    background-image: -webkit-image-set(url("../img/product-2-mobile.jpg") 1x, url("../img/product-2-mobile@2x.jpg") 2x);
+    background-image: image-set("../img/product-2-mobile.jpg" 1x, "../img/product-2-mobile@2x.jpg" 2x);
   }
 
   .services__item--components {
-    background-image: url("../img/product-3-mobile.jpg");
+    background-image: -webkit-image-set(url("../img/product-3-mobile.jpg") 1x, url("../img/product-3-mobile@2x.jpg") 2x);
+    background-image: image-set("../img/product-3-mobile.jpg" 1x, "../img/product-3-mobile@2x.jpg" 2x);
   }
 
   .feedback__layout-container {
@@ -2490,17 +2502,5 @@ button,
 
   .form__check {
     margin-left: 5px;
-  }
-}
-
-@media (max-width: 320px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 320px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 320px) and (min-resolution: 144dpi), (max-width: 320px) and (min-resolution: 1.5dppx) {
-  .main-page {
-    background-image: url("../img/mobile-bg-image@2x.jpg");
-  }
-}
-
-@media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-  .main-page {
-    background-image: url("../img/desctop-bg-image@2x.jpg");
   }
 }
