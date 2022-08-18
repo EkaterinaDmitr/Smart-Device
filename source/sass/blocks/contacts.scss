@@ -1,7 +1,6 @@
 .contacts__list {
   display: flex;
   list-style: none;
-  padding-left: 28px;
   flex-wrap: wrap;
   padding-left: 14px;
 
@@ -13,7 +12,11 @@
   }
 
   @include vp-769 {
-    margin: 5px 10px 0 auto;
+    margin: 5px -7px 0 auto;
+  }
+
+  @media (max-width: $vp-320) {
+    margin-right: 17px;
   }
 }
 
@@ -28,6 +31,10 @@
 
   @media (max-width: $vp-770) {
     margin-right: 30px;
+  }
+
+  @include vp-769 {
+    margin-left: 0;
   }
 }
 
