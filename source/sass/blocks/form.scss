@@ -148,13 +148,22 @@
   left: 0;
   top: 20px;
 
-  @include vp-769  {
+  @media (max-width: $vp-770) {
+    top: 20px;
+  }
+
+  @include vp-769 {
     top: 13px;
+  }
+
+  @media (max-width: $vp-320) {
+    top: 19px;
   }
 }
 
 .form__checkbox--modal input {
   top: 15px;
+  margin-left: 8px;
 }
 
 .form__checkbox input:checked + .form__checkbox-label::after {
@@ -181,13 +190,21 @@
   border-radius: 2px;
   margin-top: 7px;
 
+  @media (max-width: $vp-770) {
+    margin-top: 7px;
+  }
+
   @include vp-769 {
     margin-top: 0;
+  }
+
+  @media (max-width: $vp-320) {
+    margin-top: 6px;
   }
 }
 
 .form__checkbox-label--modal::before {
-  margin-top: 2px;
+  margin: 2px 10px 0 8px;
 }
 
 .form__checkbox-label::after {
@@ -201,13 +218,21 @@
   background-repeat: no-repeat;
   transform: scale(0);
 
+  @media (max-width: $vp-770) {
+    top: 11px;
+  }
+
   @include vp-769 {
-    top: 5px;
+    margin-top: -6px;
+  }
+
+  @media (max-width: $vp-320) {
+    margin-top: 0;
   }
 }
 
 .form__checkbox-label--modal::after {
-  margin-top: -5px;
+  margin: -6px 0 0 8px;
 }
 
 .form__button {

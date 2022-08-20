@@ -12,6 +12,10 @@
   height: 30px;
 }
 
+.socials__link:focus {
+  opacity: 0.5;
+}
+
 .socials__item:hover {
   opacity: 0.8;
 }
