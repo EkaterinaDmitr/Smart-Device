@@ -21,6 +21,10 @@
   @media (max-width: $vp-1440) {
     justify-content: flex-start;
     gap: 35px;
+
+    &--modal {
+      gap: 0;
+    }
   }
 
   @media (max-width: $vp-770) {

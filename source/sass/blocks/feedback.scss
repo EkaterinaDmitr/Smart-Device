@@ -44,10 +44,10 @@
   content: "";
   position: absolute;
   width: 0;
-  left: -20px;
-  bottom: 290px;
-  border-top: 863px solid rgba(4, 24, 39, 0.5);
-  border-right: 998px solid transparent;
+  left: -10px;
+  bottom: 270px;
+  border-top: 866px solid rgba(4, 24, 39, 0.5);
+  border-right: 1000px solid transparent;
 
   @media (max-width: $vp-1024) {
     display: none;
