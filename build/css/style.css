@@ -896,6 +896,7 @@ button,
   cursor: pointer;
   min-height: 40px;
   margin-top: 5px;
+  text-align: center;
 }
 
 .main-page {
@@ -1241,10 +1242,10 @@ button,
   content: "";
   position: absolute;
   width: 0;
-  left: -20px;
-  bottom: 290px;
-  border-top: 863px solid rgba(4, 24, 39, 0.5);
-  border-right: 998px solid transparent;
+  left: -10px;
+  bottom: 270px;
+  border-top: 866px solid rgba(4, 24, 39, 0.5);
+  border-right: 1000px solid transparent;
 }
 
 .feedback__image {
@@ -1790,6 +1791,10 @@ button,
     -ms-flex-pack: start;
     justify-content: flex-start;
     gap: 35px;
+  }
+
+  .form__input--modal {
+    gap: 0;
   }
 }
 
