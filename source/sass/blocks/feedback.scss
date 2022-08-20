@@ -18,10 +18,12 @@
 .feedback__layout-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding-top: 135px;
+  padding: 135px 10px;
+  gap: 40px;
 
   & picture {
     z-index: 3;
+    margin-left: 34px;
 
     @media (max-width: $vp-1024) {
       display: none;
@@ -42,9 +44,9 @@
   content: "";
   position: absolute;
   width: 0;
-  left: -15px;
-  bottom: 278px;
-  border-top: 860px solid rgba(4, 24, 39, 0.5);
+  left: -20px;
+  bottom: 290px;
+  border-top: 863px solid rgba(4, 24, 39, 0.5);
   border-right: 998px solid transparent;
 
   @media (max-width: $vp-1024) {
@@ -54,9 +56,9 @@
 
 .feedback__image {
   z-index: 2;
-  margin-right: 120px;
   margin-top: 110px;
   margin-left: -40px;
+  position: absolute;
 
   @media (max-width: $vp-1024) {
     display: none;

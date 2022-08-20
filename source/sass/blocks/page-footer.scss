@@ -2,7 +2,7 @@
   background-color: $dark-color;
 
   .container {
-    padding: 55px 44px;
+    padding: 55px 44px 30px;
     max-width: 1311px;
     display: flex;
     justify-content: space-between;
@@ -142,15 +142,12 @@
 
       &::after {
         display: block;
+        transform: none;
       }
 
-      // .site-sections__title {
-      //   cursor: default;
-      // }
-
-      // .site-sections__list {
-      //   display: none;
-      // }
+      .site-sections__list {
+        display: block;
+      }
     }
   }
 }
@@ -206,11 +203,16 @@
   &--nojs {
     @include vp-769 {
       &::before {
-        display: none;
+        display: block;
       }
 
       &::after {
-        display: none;
+        display: block;
+        transform: none;
+      }
+
+      .communications__list {
+        display: block;
       }
     }
   }

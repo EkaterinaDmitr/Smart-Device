@@ -2,11 +2,11 @@
   margin-bottom: 99px;
 
   @media (max-width: $vp-770) {
-    margin-bottom: 60px;
+    margin-bottom: 57px;
   }
 
   @media (max-width: $vp-320) {
-    margin-bottom: 72px;
+    margin-bottom: 68px;
   }
 }
 
@@ -101,7 +101,11 @@
 
   @media (max-width: $vp-770) {
     line-height: 22px;
-    margin-bottom: 10px;
+    margin-bottom: 16px;
+
+    p {
+      margin-bottom: 18px;
+    }
   }
 
   @media (max-width: $vp-320) {
@@ -118,6 +122,14 @@
   }
 }
 
+.about-company__mobile br {
+  display: none;
+
+  @media (max-width: $vp-770) {
+    display: block;
+  }
+}
+
 .about-company__button {
   font-family: $font--roboto-regular;
   background-color: transparent;
@@ -131,7 +143,7 @@
   color: $blue;
   border: 1px solid $blue;
   border-radius: 3px;
-  padding: 14px 48px;
+  padding: 14px 50px;
 
   @media (max-width: $vp-320) {
     padding: 10px 40px;

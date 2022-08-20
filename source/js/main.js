@@ -61,6 +61,40 @@ const initFooter = () => {
 
   accordions.forEach((acc) => acc.addEventListener('click', onAccordionClick));
 };
+
+
+const formPhone = document.getElementById('formPhone');
+
+formPhone.onclick = function () {
+  formPhone.value = '+7(';
+};
+
+const old = 0;
+
+formPhone.onkeydown = function () {
+  const curLen = formPhone.value.length;
+
+  if (curLen < old) {
+    old--;
+    return;
+  }
+  if (curLen === 2)
+    formPhone.value = formPhone.value + '(';
+
+  if (curLen === 6)
+    formPhone.value = formPhone.value + ')-';
+
+  if (curLen == 11)
+    formPhone.value = formPhone.value + '-';
+
+  if (curLen == 14)
+    formPhone.value = formPhone.value + '-';
+
+  if (curLen > 16)
+    formPhone.value = formPhone.value.substring(0, formPhone.value.length - 1);
+
+  old++;
+};
 // ---------------------------------
 
 // ❗❗❗ обязательно установите плагины eslint, stylelint, editorconfig в редактор кода.

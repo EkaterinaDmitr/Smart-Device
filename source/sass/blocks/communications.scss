@@ -32,6 +32,10 @@
   }
 }
 
+.communications__list li:not(:first-child) {
+  margin-bottom: 6px;
+}
+
 .communications__address {
   margin-bottom: 5px;
   color: transparentize($white, 0.3);
