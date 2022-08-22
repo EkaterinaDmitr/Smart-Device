@@ -91,9 +91,6 @@
 }
 
 .page-footer__site-sections {
-  position: relative;
-  left: -58px;
-
   @include vp-1023 {
     position: static;
     left: 0;
@@ -101,7 +98,7 @@
 
   @include vp-769 {
     padding: 20px 25px;
-    border-top: 1px solid transparentize($blue, 0.3);
+    border-top: 1px solid transparentize($white, 0.3);
     position: relative;
 
     &::before {
@@ -111,7 +108,7 @@
       right: 26px;
       width: 15px;
       height: 1px;
-      background-color: $blue;
+      background-color: $white;
     }
 
     &::after {
@@ -122,7 +119,7 @@
       width: 15px;
       height: 1px;
       transform: rotate(90deg);
-      background-color: $blue;
+      background-color: $white;
     }
   }
 
@@ -156,6 +153,10 @@
   position: relative;
   left: -39px;
 
+  @include vp-1279 {
+    margin-left: 25px;
+  }
+
   @include vp-1023 {
     position: static;
     left: 0;
@@ -165,10 +166,11 @@
   @include vp-769 {
     padding: 22px 25px 5px;
     margin-right: 0;
+    margin-left: 0;
     position: relative;
 
-    border-top: 1px solid transparentize($blue, 0.3);
-    border-bottom: 1px solid transparentize($blue, 0.3);
+    border-top: 1px solid transparentize($white, 0.3);
+    border-bottom: 1px solid transparentize($white, 0.3);
 
     &::before {
       content: "";
@@ -177,7 +179,7 @@
       right: 26px;
       width: 15px;
       height: 1px;
-      background-color: $blue;
+      background-color: $white;
     }
 
     &::after {
@@ -188,7 +190,7 @@
       width: 15px;
       height: 1px;
       transform: rotate(90deg);
-      background-color: $blue;
+      background-color: $white;
     }
 
     &.is-opened {

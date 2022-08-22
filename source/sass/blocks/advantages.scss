@@ -10,18 +10,15 @@
   list-style: none;
   display: grid;
   grid-template-columns: 595px 595px;
-  grid-template-rows: 1fr 1fr;
   justify-content: center;
   gap: 30px;
 
   @media (max-width: $vp-1440) {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat("2, minmax(0,1fr)");
   }
 
   @media (max-width: $vp-770) {
     padding: 0 50px;
-    align-items: start;
   }
 
   @include vp-769 {
@@ -36,7 +33,7 @@
   border: 2px solid $light-grey;
   border-left: 5px solid $blue;
   padding: 37px 44px 30px 40px;
-  cursor: pointer;
+  cursor: default;
 
   @media (max-width: $vp-1024) {
     min-height: 340px;

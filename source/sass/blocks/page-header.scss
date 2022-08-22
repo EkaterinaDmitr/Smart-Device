@@ -4,6 +4,10 @@
   left: 0;
   z-index: 30;
   background: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
+
+  @include vp-1023 {
+    position: absolute;
+  }
 }
 
 .page-header__container {
@@ -14,14 +18,10 @@
   max-width: 1222px;
   padding: 28px 63px 35px 0;
 
-  @media (max-width: $vp-1024) {
+  @include vp-1023 {
     padding: 20px 26px;
     justify-content: space-between;
     display: block;
-  }
-
-  @media (max-width: $vp-770) {
-    // display: block;
   }
 
   @media (max-width: $vp-320) {
@@ -29,10 +29,19 @@
   }
 }
 
+.page-header__logo {
+  flex-shrink: 0;
+  margin-right: 150px;
+
+  @include vp-1439 {
+    margin-right: 0;
+  }
+}
+
 .page-header__nav {
   display: flex;
 
-  @media (max-width: $vp-1024) {
+  @include vp-1023 {
     padding-left: 25px;
     padding-bottom: 5px;
     display: grid;
@@ -67,8 +76,9 @@
   min-height: 40px;
   margin-top: 5px;
   text-align: center;
+  flex-shrink: 0;
 
-  @media (max-width: $vp-1024) {
+  @include vp-1023 {
     display: none;
   }
 }

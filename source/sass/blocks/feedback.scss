@@ -1,6 +1,7 @@
 .feedback {
   background-color: $blue;
   min-height: 840px;
+  position: relative;
 
   @media (max-width: $vp-1440) {
     min-height: 600px;
@@ -44,10 +45,10 @@
   content: "";
   position: absolute;
   width: 0;
-  left: -10px;
-  bottom: 270px;
-  border-top: 866px solid rgba(4, 24, 39, 0.5);
-  border-right: 1000px solid transparent;
+  left: 0;
+  bottom: 0;
+  border-top: 860px solid rgba(4, 24, 39, 0.5);
+  border-right: 995px solid transparent;
 
   @media (max-width: $vp-1024) {
     display: none;
