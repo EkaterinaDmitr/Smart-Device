@@ -4,7 +4,7 @@
   flex-wrap: wrap;
   padding-left: 14px;
 
-  @media (max-width: $vp-1024) {
+  @include vp-1023 {
     padding: 0;
     justify-content: flex-end;
     margin: 7px 26px 0 auto;
@@ -22,7 +22,6 @@
 
 .contacts__item:not(:last-child) {
   margin-right: 123px;
-  margin-left: 150px;
 
   @media (max-width: $vp-1440) {
     margin-right: 20px;
@@ -64,13 +63,13 @@
 }
 
 .contacts__mail {
-  @media (max-width: $vp-1024) {
+  @include vp-1023 {
     display: none;
   }
 }
 
 .contacts__phone {
-  @media (max-width: $vp-1024) {
+  @include vp-1023 {
     display: none;
   }
 }

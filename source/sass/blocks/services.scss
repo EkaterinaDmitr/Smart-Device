@@ -50,12 +50,12 @@
   gap: 85px;
   padding: 0;
 
-  @media (max-width: $vp-1440) {
+  @include vp-1919 {
     display: flex;
-    flex-direction: column;
   }
 
-  @media (max-width: $vp-770) {
+  @media (max-width: $vp-1024) {
+    flex-direction: column;
     gap: 29px;
     margin-top: 37px;
   }
@@ -91,7 +91,7 @@
   background-color: $color-default-black;
   z-index: 4;
 
-  @media (max-width: $vp-1440) {
+  @media (max-width: $vp-1024) {
     width: 100%;
     min-height: 350px;
   }
@@ -135,7 +135,7 @@
 .services__item--productions {
   background-image: image-set("../img/product-1.jpg" 1x, "../img/product-1@2x.jpg" 2x);
 
-  @media (max-width: $vp-1440) {
+  @media (max-width: $vp-1024) {
     background-image: image-set("../img/product-1-tablet.jpg" 1x, "../img/product-1-tablet@2x.jpg" 2x);
   }
 
@@ -147,7 +147,7 @@
 .services__item--montage {
   background-image: image-set("../img/product-2.jpg" 1x, "../img/product-2@2x.jpg" 2x);
 
-  @media (max-width: $vp-1440) {
+  @media (max-width: $vp-1024) {
     background-image: image-set("../img/product-2-tablet.jpg" 1x, "../img/product-2-tablet@2x.jpg" 2x);
   }
 
@@ -173,7 +173,7 @@
 .services__item--components {
   background-image: image-set("../img/product-3.jpg" 1x, "../img/product-3@2x.jpg" 2x);
 
-  @media (max-width: $vp-1440) {
+  @media (max-width: $vp-1024) {
     background-image: image-set("../img/product-3-tablet.jpg" 1x, "../img/product-3-tablet@2x.jpg" 2x);
   }
 
