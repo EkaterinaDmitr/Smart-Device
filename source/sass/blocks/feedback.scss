@@ -25,6 +25,7 @@
   & picture {
     z-index: 3;
     margin-left: 34px;
+    width: 100%;
 
     @media (max-width: $vp-1024) {
       display: none;
@@ -59,7 +60,6 @@
   z-index: 2;
   margin-top: 110px;
   margin-left: -40px;
-  position: absolute;
 
   @media (max-width: $vp-1024) {
     display: none;
