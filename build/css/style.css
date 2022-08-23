@@ -704,7 +704,7 @@ button,
   position: relative;
   min-height: 610px;
   width: 500px;
-  padding: 35px 48px 35px 33px;
+  padding: 38px 39px 35px 39px;
   border-radius: 3px;
   background-color: #00b2ff;
 }
@@ -728,7 +728,7 @@ button,
   font-size: 16px;
   line-height: 22px;
   color: #ffffff;
-  margin: 0 0 37px;
+  margin: 0 0 38px;
 }
 
 .modal__form-body {
@@ -773,8 +773,8 @@ button,
 
 .modal__close-btn {
   position: absolute;
-  top: 20px;
-  right: 17px;
+  top: 17px;
+  right: 16px;
   z-index: 1;
   width: 40px;
   height: 40px;
@@ -1242,6 +1242,7 @@ button,
 .feedback__layout-container picture {
   z-index: 3;
   margin-left: 34px;
+  width: 100%;
 }
 
 .feedback__layout-container::before {
@@ -1258,7 +1259,6 @@ button,
   z-index: 2;
   margin-top: 110px;
   margin-left: -40px;
-  position: absolute;
 }
 
 .feedback__group h2 {
@@ -1407,7 +1407,7 @@ button,
 
 .form__body--modal textarea {
   width: 420px;
-  margin-bottom: 22px;
+  margin-bottom: 19px;
 }
 
 .form__check {
