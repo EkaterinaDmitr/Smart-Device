@@ -2063,7 +2063,7 @@ button,
   }
 
   .services__container {
-    padding: 58px 51px 74px;
+    padding: 58px 51px 47px;
   }
 
   .services__item {
@@ -2113,7 +2113,7 @@ button,
   .form__checkbox {
     -ms-grid-columns: (minmax(0, 1fr))[2];
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 30px;
+    gap: 81px;
     justify-items: start;
   }
 
@@ -2539,7 +2539,7 @@ button,
   }
 
   .services__container {
-    padding-bottom: 89px;
+    padding-bottom: 60px;
   }
 
   .services__list {
