@@ -170,7 +170,7 @@
                   <div class="form__input">
                     <input  id="formName" type="text" name="name" placeholder="Имя" required>
                     <label class="visually-hidden" for="formName">Имя</label>
-                    <input id="formPhone" type="tel" name="phone" placeholder="Телефон" required>
+                    <input id="formPhone" type="tel" name="phone" placeholder="Телефон" pattern="\+7[\s(]*\d{3}[)\s]*\d{3}[\s-]?\d{2}[\s-]?\d{2}" data-pattern="+*(***)***-**-**" data-prefix="+7" required>
                     <label class="visually-hidden" for="formPhone">Телефон</label>
                   </div>
                   <label class="visually-hidden" for="message">Ваш вопрос</label>
@@ -284,7 +284,7 @@
               <div class="form__input form__input--modal">
                 <input id="modalFormName" type="text" name="name" placeholder="Имя" required>
                 <label class="visually-hidden" for="modalFormName">Имя</label>
-                <input id="modalFormPhone" type="tel" name="phone" placeholder="Телефон" required>
+                <input id="modalFormPhone" type="tel" name="phone" placeholder="Телефон" pattern="\+7[\s(]*\d{3}[)\s]*\d{3}[\s-]?\d{2}[\s-]?\d{2}" data-pattern="+*(***)***-**-**" data-prefix="+7" required>
                 <label class="visually-hidden" for="modalFormPhone">Телефон</label>
               </div>
               <label class="visually-hidden" for="modalMessage">Ваш вопрос:</label>
