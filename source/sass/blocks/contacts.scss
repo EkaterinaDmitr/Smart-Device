@@ -1,13 +1,17 @@
 .contacts__list {
-  display: flex;
+  display: grid;
   list-style: none;
-  flex-wrap: wrap;
-  padding-left: 14px;
+  padding-left: 12px;
+  grid-template-columns: 1fr 1fr;
+
+  @media (max-width: $vp-1440) {
+    padding-left: 0;
+  }
 
   @include vp-1023 {
     padding: 0;
     justify-content: flex-end;
-    margin: 7px 26px 0 auto;
+    margin: 10px 6px 0 auto;
     padding-right: 11px;
   }
 
@@ -16,24 +20,28 @@
   }
 
   @media (max-width: $vp-320) {
-    margin-right: 17px;
+    margin-right: 0;
   }
 }
 
 .contacts__item:not(:last-child) {
-  margin-right: 123px;
+  margin-right: 36px;
+  min-width: 215px;
+  margin-bottom: 10px;
 
   @media (max-width: $vp-1440) {
-    margin-right: 20px;
-    margin-left: 40px;
+    margin-right: 9px;
+    min-width: auto;
+
   }
 
   @media (max-width: $vp-770) {
-    margin-right: 30px;
+    margin-right: 24px;
   }
 
   @include vp-769 {
     margin-left: 0;
+    margin-right: 22px;
   }
 }
 

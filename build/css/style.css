@@ -814,17 +814,18 @@ button,
 }
 
 .contacts__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
   list-style: none;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  padding-left: 14px;
+  padding-left: 12px;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 
 .contacts__item:not(:last-child) {
-  margin-right: 123px;
+  margin-right: 36px;
+  min-width: 215px;
+  margin-bottom: 10px;
 }
 
 .contacts__item-svg {
@@ -1499,6 +1500,12 @@ button,
   transform: scale(0);
 }
 
+.form__checkbox input:focus + .form__checkbox-label::before {
+  border: 2px solid #ffffff;
+  -webkit-box-shadow: 0px 0px 31px 5px white;
+  box-shadow: 0px 0px 31px 5px white;
+}
+
 .form__checkbox-label--modal::after {
   margin: -6px 0 0 8px;
 }
@@ -1738,9 +1745,13 @@ button,
 }
 
 @media (max-width: 1440px) {
+  .contacts__list {
+    padding-left: 0;
+  }
+
   .contacts__item:not(:last-child) {
-    margin-right: 20px;
-    margin-left: 40px;
+    margin-right: 9px;
+    min-width: auto;
   }
 
   .advantages__list {
@@ -1887,7 +1898,7 @@ button,
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
-    margin: 7px 26px 0 auto;
+    margin: 10px 6px 0 auto;
     padding-right: 11px;
   }
 
@@ -1981,7 +1992,7 @@ button,
 
 @media (max-width: 770px) {
   .contacts__item:not(:last-child) {
-    margin-right: 30px;
+    margin-right: 24px;
   }
 
   .main-page {
@@ -2153,6 +2164,7 @@ button,
 
   .contacts__item:not(:last-child) {
     margin-left: 0;
+    margin-right: 22px;
   }
 
   .main-page__header {
@@ -2447,7 +2459,7 @@ button,
 
 @media (max-width: 320px) {
   .contacts__list {
-    margin-right: 17px;
+    margin-right: 0;
   }
 
   .contacts__item-svg img {
